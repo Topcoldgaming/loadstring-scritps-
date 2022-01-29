@@ -1,1 +1,3 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Topcoldgaming/T0P-Admin-Commands-v2-Encoded-/main/Enocoded%20%24-T0P-%24%20Admin%20Commands%20v2.1.txt"))()
+--// has premium add-on...
+--// exucute the loadstring and not the website inside the loadstring so it can auto-update
