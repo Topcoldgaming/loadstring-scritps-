@@ -1,0 +1,99 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local top = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+main.Position = UDim2.new(0.170697019, 0, 0.171974525, 0)
+main.Size = UDim2.new(0, 447, 0, 245)
+main.Visible = true
+main.Draggable = true
+main.Selectable = true
+main.Active = true
+
+top.Name = "top"
+top.Parent = main
+top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+top.Size = UDim2.new(0, 447, 0, 21)
+
+TextLabel.Parent = top
+TextLabel.BackgroundColor3 = Color3.fromRGB(126, 126, 126)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 447, 0, 21)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "[$-T0P-$] Black Out"
+TextLabel.TextColor3 = Color3.fromRGB(126, 126, 126)
+TextLabel.TextSize = 28.000
+
+ImageLabel.Parent = main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0, 0, 0.0857142881, 0)
+ImageLabel.Size = UDim2.new(0, 447, 0, 224)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5033021"
+
+TextButton.Parent = ImageLabel
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.293064862, 0, 0.721811235, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Black out"
+TextButton.TextColor3 = Color3.fromRGB(126, 126, 126)
+TextButton.TextSize = 58.000
+
+UICorner.Parent = TextButton
+
+-- Scripts:
+
+local function PESMOY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	function blackout()
+		if main.Visible == true then
+			main.Visible = false
+		else
+			script.Parent.Parent.Parent.Visible = false
+		end
+		wait(0.5)
+		local notifSound = Instance.new("Sound",workspace)
+		notifSound.PlaybackSpeed = 1
+		notifSound.Volume = 1
+		notifSound.SoundId = "rbxassetid://8666763884"
+		notifSound.PlayOnRemove = true
+		notifSound:Destroy()
+		local loop2 = true
+		while loop2 == true do
+			local ReplicatedStorage = game:GetService('ReplicatedStorage');
+			local Lightning = Instance.new('Part');
+			local Player = game:GetService('Players').LocalPlayer;
+			local Position = Player.Character.RightFoot.CFrame;
+			local l = Instance.new("Part")
+			l.Parent = workspace
+			l.BrickColor = BrickColor.new("Daisy orange")
+			l.Material = "Neon"
+			l.Anchored = true
+			l.CanCollide = false
+			l.Size = Vector3.new(2047, 2047, 2047);
+			l.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			l.Orientation = Vector3.new(32, 0, 0)
+			l.Transparency = 0
+			wait(0.5)
+		end
+	end
+	
+	script.Parent.Activated:Connect(blackout)
+end
+coroutine.wrap(PESMOY_fake_script)()
