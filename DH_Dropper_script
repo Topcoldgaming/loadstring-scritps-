@@ -1,0 +1,20 @@
+-- // Da Hood Dropper script //-- 
+--[[
+Commands:
+------------
+:drop
+:stop
+:pickup
+:stoppickingup
+:bank
+:adminbase
+:back
+:antiafk
+:cmds
+:crash
+-----------
+]]
+
+getgev().prefix = ":"
+getgev().detect = true
+loadstring(game:HttpGet('https://github.com/Topcoldgaming/loadstring-scritps-/blob/main/DH_dropper_main_script'))()
