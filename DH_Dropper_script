@@ -16,5 +16,5 @@ Commands:
 ]]
 
 getgev().prefix = ":"
-getgev().detect = true
-loadstring(game:HttpGet('https://github.com/Topcoldgaming/loadstring-scritps-/blob/main/DH_dropper_main_script'))()
+getgev().detect = true -- // DON'T CHANGE THIS!!!!!!! //
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/DH_dropper_main_script'))()
