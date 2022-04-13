@@ -1,0 +1,2 @@
+getgev().prefix = ":" -- Change ':' to your prefix, leave it if you like it
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/DH_dropper_main_script'))()
