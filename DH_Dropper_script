@@ -1,5 +1,11 @@
--- // Da Hood Dropper script //-- 
 --[[
+// Da Hood Dropper script //
+-----------------------------
+
+Credits:
+-----------
+topcoldgaming#0001
+
 Commands:
 ------------
 :drop
@@ -15,6 +21,5 @@ Commands:
 -----------
 ]]
 
-getgev().prefix = ":"
-getgev().detect = true -- // DON'T CHANGE THIS!!!!!!! //
+getgev().prefix = ":" -- Change ':' to your prefix, leave it if you like it
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/DH_dropper_main_script'))()
