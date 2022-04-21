@@ -1,2 +1,20 @@
-getgenv().prefix = ":" -- Change ':' to your prefix, leave it if you like it
+-- // Da Hood Dropper script //-- 
+--[[
+Commands:
+------------
+:drop
+:stop
+:pickup
+:stoppickingup
+:bank
+:adminbase
+:back
+:antiafk
+:cmds
+:crash
+-----------
+]]
+
+getgev().prefix = ":"
+getgev().detect = true
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/DH_dropper_main_script'))()
