@@ -1,1 +1,382 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
+local UIKey = Instance.new("UICorner")
+local UITextbox = Instance.new("UICorner")
+local UIOpener = Instance.new("UICorner")
+local UIUpperTab = Instance.new("UICorner")
+local UIGetKey = Instance.new("UICorner")
+local ScreenGui = Instance.new("ScreenGui")
+local KeyFrame = Instance.new("Frame")
+local Textbox = Instance.new("TextBox")
+local GetKey = Instance.new("TextButton")
+local UpperTab = Instance.new("TextLabel")
+local Opener = Instance.new("TextButton")
+local Expand = Instance.new("TextButton")
+local ChangeLog = Instance.new("TextLabel")
+local ChangeLog = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Credit1 = Instance.new("TextLabel")
+local Credit2 = Instance.new("TextLabel")
+local Right = Instance.new("TextLabel")
+local Right_2 = Instance.new("TextLabel")
+local Top = Instance.new("TextLabel")
+local Instructions = Instance.new("TextLabel")
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local className = "UICorner"
+local part = Instance.new(className, KeyFrame)
+local className = "UICorner"
+local part = Instance.new(className, GetKey)
+local className = "UICorner"
+local part = Instance.new(className, Textbox)
+
+
+
+Top.Name = "Top"
+Top.Parent = KeyFrame
+Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top.Position = UDim2.new(0.709523797, 0, 0.0102459015, 0)
+Top.Size = UDim2.new(0, 1, 0, 0)
+Top.Font = Enum.Font.SourceSans
+Top.Text = ""
+Top.TextColor3 = Color3.fromRGB(0, 0, 0)
+Top.TextSize = 14.000
+Top.Visible = false
+
+Right.Name = "Right"
+Right.Parent = KeyFrame
+Right.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Right.Position = UDim2.new(0, 0, 0.241803274, 0)
+Right.Size = UDim2.new(0, 0, 0, 1)
+Right.Font = Enum.Font.SourceSans
+Right.Text = ""
+Right.TextColor3 = Color3.fromRGB(0, 0, 0)
+Right.TextSize = 14.000
+Right.Visible = false
+
+
+Right_2.Name = "Right"
+Right_2.Parent = KeyFrame
+Right_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Right_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Right_2.Position = UDim2.new(0, 0, 0.520491779, 0)
+Right_2.Size = UDim2.new(0, 0, 0, 1)
+Right_2.Font = Enum.Font.SourceSans
+Right_2.Text = ""
+Right_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Right_2.TextSize = 14.000
+Right_2.Visible = false
+
+Instructions.Name = "Instructions"
+Instructions.Parent = KeyFrame
+Instructions.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Instructions.BackgroundTransparency = 1.000
+Instructions.Position = UDim2.new(0.0273810606, 0, 0.534836054, 0)
+Instructions.Size = UDim2.new(0, 0, 0, 126)
+Instructions.Font = Enum.Font.SciFi
+Instructions.Text = "Instructions: Go to the website copied \n into your clipboard and join the server,\n once in, go to #get-key and type ?key"
+Instructions.TextColor3 = Color3.fromRGB(255, 255, 255)
+Instructions.TextSize = 35.000
+Instructions.TextWrapped = true
+Instructions.TextXAlignment = Enum.TextXAlignment.Left
+Instructions.TextYAlignment = Enum.TextYAlignment.Top
+Instructions.Visible = false
+
+
+
+Credits.Name = "Credits"
+Credits.Parent = KeyFrame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.0273810606, 0, 0.256147534, 0)
+Credits.Size = UDim2.new(0, 2, 0, 40)
+Credits.Font = Enum.Font.SciFi
+Credits.Text = "Credits:"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 35.000
+Credits.TextWrapped = true
+Credits.Visible = false
+
+Credit1.Name = "Credit1"
+Credit1.Parent = KeyFrame
+Credit1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.BackgroundTransparency = 1.000
+Credit1.Position = UDim2.new(0.0273810606, 0, 0.338114768, 0)
+Credit1.Size = UDim2.new(0, 2, 0, 40)
+Credit1.Font = Enum.Font.SciFi
+Credit1.Text = "topcoldgaming#0001 Built Main Gui"
+Credit1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit1.TextSize = 35.000
+Credit1.TextWrapped = true
+Credit1.Visible = false
+
+Credit2.Name = "Credit2"
+Credit2.Parent = KeyFrame
+Credit2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit2.BackgroundTransparency = 1.000
+Credit2.Position = UDim2.new(0.0273810606, 0, 0.420081973, 0)
+Credit2.Size = UDim2.new(0, 2, 0, 40)
+Credit2.Font = Enum.Font.SciFi
+Credit2.Text = "Rev#4892 Built Key Gui And Coded"
+Credit2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit2.TextSize = 35.000
+Credit2.TextWrapped = true
+Credit2.Visible = false
+
+ChangeLog.Name = "ChangeLog"
+ChangeLog.Parent = KeyFrame
+ChangeLog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangeLog.BackgroundTransparency = 1.000
+ChangeLog.Position = UDim2.new(0.320238203, 0, 0.459016383, 0)
+ChangeLog.Size = UDim2.new(0, 300, 0, 40)
+ChangeLog.Font = Enum.Font.SciFi
+ChangeLog.Text = "ChangeLog"
+ChangeLog.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeLog.TextSize = 35.000
+ChangeLog.Visible = false
+
+
+Expand.Name = "Expand"
+Expand.Parent = KeyFrame
+Expand.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Expand.BorderSizePixel = 0
+Expand.Position = UDim2.new(0.0238095243, 0, 0.0491803288, 0)
+Expand.Size = UDim2.new(0, 0, 0, 0)
+Expand.Font = Enum.Font.SourceSans
+Expand.Text = "Expand"
+Expand.TextColor3 = Color3.fromRGB(255, 255, 255)
+Expand.TextSize = 20.000
+Expand.TextScaled = true
+Expand.MouseButton1Down:connect(function()
+if Expand.Text == "Expand" then
+Expand.Text = "Condense"
+Expand:TweenPosition(UDim2.new(0.381, 0, 0.010, 0),"Out","Sine",3)
+KeyFrame:TweenSize(UDim2.new(0, 840, 0, 488),"Out","Sine",3)  
+UpperTab:TweenSize(UDim2.new(0, 840, 0, 6),"Out","Sine",3)
+wait(0.7)
+GetKey:TweenPosition(UDim2.new(0.065, 0, 0.166, 0),"Out","Sine",1.4)
+Textbox:TweenPosition(UDim2.new(0.028, 0, 0.074, 0),"Out","Sine",1)
+
+wait(3)
+ChangeLog.Visible = true
+Credits.Visible = true
+Credit1.Visible = true
+Credit2.Visible = true
+ChangeLog:TweenPosition(UDim2.new(0.642, 0, 0.012, 0),"Out","Sine",0.6)
+
+wait(1.5)
+Top.Visible = true
+Right.Visible = true
+Top:TweenSize(UDim2.new(0, 1, 0, 483),"Out","Sine",1)
+wait(1)
+Right:TweenSize(UDim2.new(0, 596, 0, 1),"Out","Sine",1.5)
+wait(1)
+Credits:TweenSize(UDim2.new(0, 121, 0, 40),"Out","Sine",1)
+
+
+
+wait(1)
+Credit1:TweenSize(UDim2.new(0, 496, 0, 40),"Out","Sine",2)
+wait(2)
+Credit2:TweenSize(UDim2.new(0, 496, 0, 40),"Out","Sine",2)
+wait(2)
+
+
+Right_2.Visible = true
+
+Right_2:TweenSize(UDim2.new(0, 596, 0, 1),"Out","Sine",1.5)
+
+
+Instructions.Visible = true
+Instructions.TextTransparency = 1
+Instructions:TweenSize(UDim2.new(0, 547, 0, 126),"Out","Sine",2)
+wait(2)
+Instructions.TextTransparency = 0.9
+wait(0.2)
+Instructions.TextTransparency = 0.8
+wait(0.2)
+Instructions.TextTransparency = 0.7
+wait(0.2)
+Instructions.TextTransparency = 0.6
+wait(0.2)
+Instructions.TextTransparency = 0.5
+wait(0.2)
+Instructions.TextTransparency = 0.4
+wait(0.2)
+Instructions.TextTransparency = 0.3
+wait(0.2)
+Instructions.TextTransparency = 0.2
+wait(0.2)
+Instructions.TextTransparency = 0.1
+wait(0.2)
+Instructions.TextTransparency = 0
+
+
+
+else
+Expand.Text = "Expand"
+Instructions.TextTransparency = 0.1
+wait(0.2)
+Instructions.TextTransparency = 0.2
+wait(0.2)
+Instructions.TextTransparency = 0.3
+wait(0.2)
+Instructions.TextTransparency = 0.4
+wait(0.2)
+Instructions.TextTransparency = 0.5
+wait(0.2)
+Instructions.TextTransparency = 0.6
+wait(0.2)
+Instructions.TextTransparency = 0.7
+wait(0.2)
+Instructions.TextTransparency = 0.8
+wait(0.2)
+Instructions.TextTransparency = 0.9
+wait(0.2)
+Instructions.TextTransparency = 1
+
+
+
+Instructions:TweenSize(UDim2.new(0, 574, 0, 0),"Out","Sine",2)
+wait(1)
+Instructions.Visible = false
+Right_2:TweenSize(UDim2.new(0, 0, 0, 1),"Out","Sine",1.5)
+wait(1.5)
+Right_2.Visible = false
+Credit2:TweenSize(UDim2.new(0, 0, 0, 40),"Out","Sine",2)
+wait(2)
+Credit2.Visible = false
+Credit1:TweenSize(UDim2.new(0, 0, 0, 40),"Out","Sine",2)
+wait(2)
+Credit1.Visible = false
+Credits:TweenSize(UDim2.new(0, 0, 0, 40),"Out","Sine",1)
+wait(1)
+Credits.Visible = false
+Right:TweenSize(UDim2.new(0, 0, 0, 1),"Out","Sine",1.5)
+wait(1.5)
+Right.Visible = false
+Top:TweenSize(UDim2.new(0, 1, 0, 0),"Out","Sine",1)
+wait(1)
+Top.Visible = false
+ChangeLog:TweenPosition(UDim2.new(0.320238203, 0, 0.459016383, 0),"Out","Sine",0.6)
+wait(0.6)
+ChangeLog.Visible = false
+wait(0.2)
+GetKey:TweenPosition(UDim2.new(0.257476211, 0, 0.606787026, 0),"Out","Sine",1)
+Textbox:TweenPosition(UDim2.new(0.109238096, 0, 0.278918058, 0),"Out","Sine",1)
+wait(1)
+
+Expand:TweenPosition(UDim2.new(0.0238095243, 0, 0.0491803288, 0),"Out","Sine",3)
+KeyFrame:TweenSize(UDim2.new(0, 210, 0, 122),"Out","Sine",3)  
+UpperTab:TweenSize(UDim2.new(0, 210, 0, 6),"Out","Sine",3)
+
+
+end
+
+end)
+
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = ScreenGui
+KeyFrame.Active = true
+KeyFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+KeyFrame.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+KeyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyFrame.BorderSizePixel = 0
+KeyFrame.Draggable = true
+KeyFrame.Position = UDim2.new(0.5, 0, 0.5, 9)
+KeyFrame.Selectable = true
+KeyFrame.Size = UDim2.new(0, 0, 0, 0)
+
+Textbox.Name = "Textbox"
+Textbox.Parent = KeyFrame
+Textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Textbox.BorderSizePixel = 0
+Textbox.Position = UDim2.new(0.109238096, 0, 0.278918058, 0)
+Textbox.Size = UDim2.new(0, 0, 0, 0)
+Textbox.Font = Enum.Font.SourceSans
+Textbox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.PlaceholderText = "Key"
+Textbox.Text = ""
+Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.TextScaled = true
+Textbox.TextSize = 25.000
+Textbox.TextWrapped = true
+
+GetKey.Name = "GetKey"
+GetKey.Parent = KeyFrame
+GetKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.BorderSizePixel = 0
+GetKey.Position = UDim2.new(0.257476211, 0, 0.606787026, 0)
+GetKey.Size = UDim2.new(0, 0, 0, 0)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "Get Key"
+GetKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+GetKey.TextScaled = true
+GetKey.TextSize = 28.000
+GetKey.TextWrapped = true
+GetKey.MouseButton1Down:connect(function()
+
+end)
+
+UpperTab.Name = "UpperTab"
+UpperTab.Parent = KeyFrame
+UpperTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UpperTab.BorderSizePixel = 0
+UpperTab.Size = UDim2.new(0, 0, 0, 0)
+UpperTab.Font = Enum.Font.SourceSans
+UpperTab.Text = ""
+UpperTab.TextColor3 = Color3.fromRGB(0, 0, 0)
+UpperTab.TextScaled = true
+UpperTab.TextSize = 14.000
+UpperTab.TextWrapped = true
+
+Opener.Name = "Opener"
+Opener.Parent = KeyFrame
+Opener.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Opener.BorderSizePixel = 0
+Opener.Position = UDim2.new(0, 0, 0.319901764, 0)
+Opener.Size = UDim2.new(0, 210, 0, 39)
+Opener.Font = Enum.Font.SourceSans
+Opener.Text = "Click to open HUB"
+Opener.TextColor3 = Color3.fromRGB(255, 0, 0)
+Opener.TextScaled = true
+Opener.TextSize = 14.000
+Opener.TextWrapped = true
+Opener.Visible = false
+wait(2)
+KeyFrame:TweenSize(UDim2.new(0, 210, 0, 122),"Out","Sine",1)
+wait(0.4)
+Textbox:TweenSize(UDim2.new(0, 161, 0, 34),"Out","Sine",1)
+Expand:TweenSize(UDim2.new(0, 200, 0, 22),"Out","Sine",0.9)
+GetKey:TweenSize(UDim2.new(0, 98, 0, 28),"Out","Sine",1)
+UpperTab:TweenSize(UDim2.new(0, 210, 0, 6),"Out","Sine",1)
+Textbox.FocusLost:connect(function()
+if Textbox.Text == "YOURKEYHERE" then
+
+Textbox.TextColor3 = Color3.fromRGB(0, 255, 0)
+wait(2)
+Expand.Visible = false
+Opener.Visible = true
+UpperTab.Visible = false
+Textbox.Visible = false
+GetKey.Visible = false
+KeyFrame:TweenSize(UDim2.new(0, 210, 0, 55),"Out","Sine",1)
+Opener:TweenPosition(UDim2.new(0, 0, 0.138083577, 0),"Out","Sine",1)
+else
+Textbox.Selectable = false
+Textbox.TextColor3 = Color3.fromRGB(255, 0, 0)
+wait(1)
+Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+Textbox.Text = ""
+
+
+end
+end)
