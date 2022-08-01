@@ -1,0 +1,230 @@
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+
+--// Da Hood game Id checker //--
+if game.PlaceId ~= (2788229376) then
+		return
+end
+
+spawn(function()
+Admins = {"JokeTheFool","ITopStarI" ,"Sherosama", "Papa_Mbaye",
+"AStrongMuscle", "iRenn", "NikoSenpai", "UziGarage", "iumu",
+"Benoxa", "Luutyy", "clubstar54", "givkitheth", "zakblak20",
+"MarTheWise", "BeeTheKidd", "qtCeleste", "coreten", "LegacyCross",
+"NatsuDBlaze", "Asuyia", "POMPKUN", "Untold_Joke", "MoodJesus", "AfroDs",
+"MarkoSumisu", "Greed_Ocean","givkitheth", "DrxcoBaby" , "DrxcoRxsh", "XavierWildYT",
+"dtbbullet", "ATKDrizzy", "bull_bot"
+}
+for i, players in pairs(game:GetService("Players"):GetPlayers()) do
+if players.Name == unpack(Admins) then
+game:GetService("Players").LocalPlayer:Kick("$-T0P-$ Defense : Admin Joined, Kicked To Prevent Ban")
+end
+end
+game:GetService("Players").PlayerAdded:Connect(function(Player)
+if Player.Name == unpack(Admins) then
+game:GetService("Players").LocalPlayer:Kick("$-T0P-$ Defense : Admin Joined, Kicked To Prevent Ban")
+end
+end)
+end)
+-- // Vars
+local detectionVectors = {
+CHECKER_1 = true,
+TeleportDetect = true,
+OneMoreTime = true,
+BANREMOTE = true,
+KICKREMOTE = true
+}
+-- // Metatable vars
+local mt = getrawmetatable(game)
+local backupnamecall = mt.__namecall
+setreadonly(mt, false)
+-- // Hook
+mt.__namecall = newcclosure(function(...)
+-- // Vars
+local method = getnamecallmethod()
+local args = {...}
+-- // Check if it trying to do naughty
+if (method == "FireServer" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+return wait(9e9)
+end
+if (method == "CHECKER_1" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+return wait(9e9)
+end
+if (method == "KICKREMOTE" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+
+return wait(9e9)
+end
+if (method == "BANREMOTE" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+return wait(9e9)
+end
+-- // Fly Bypass
+if (not checkcaller() and getfenv(1).crash ~= nil and getfenv(1).checkChild ~= nil) then
+getcallingscript():Destroy()
+return wait(9e9)
+end
+-- // Return
+return backupnamecall(...)
+end)
+-- // End Metatable
+setreadonly(mt, true)
+function toTarget(d, C, D)
+local E = game:service"TweenService"
+local F = TweenInfo.new((C - d).Magnitude / 170, Enum.EasingStyle.Quad)
+local G = tick()
+local H, I = pcall(function()
+local H = E:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], F, {
+CFrame = D
+})
+H:Play()
+end)
+if not H then
+return I
+end
+end;
+function ToShoes(d, C, D)
+local E = game:service"TweenService"
+local F = TweenInfo.new((C - d).Magnitude / 50, Enum.EasingStyle.Quad)
+local G = tick()
+local H, I = pcall(function()
+local H = E:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], F, {
+CFrame = D
+})
+H:Play()
+end)
+if not H then
+return I
+end
+end;
+local function J(K, L)
+local M = (K.Position - L.Position).magnitude;
+if M <= 50 then
+
+fireclickdetector(L:FindFirstChild("ClickDetector"), 4)
+return M
+end
+end;
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+for i,v in pairs(game.Players:GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() or v.DisplayName:lower():sub(1, #String) == String:lower() then
+table.insert(Found,v.Name)
+end
+end
+return Found
+end
+local function FindPlrOnMouse()
+for i, v in pairs(game.Workspace:FindPartsInRegion3(Region3.new(game.Players.LocalPlayer:GetMouse().Hit.Position, game.Players.LocalPlayer:GetMouse().Hit.Position))) do
+local plr = game.Players:GetPlayerFromCharacter(v.Parent)
+if plr ~= nil and plr ~= game.Players.LocalPlayer then
+return plr
+end
+end
+return nil
+end
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+--anti-cheat
+repeat
+    wait()
+until game:IsLoaded()
+local gm = getrawmetatable(game)
+setreadonly(gm, false)
+local namecall = gm.__namecall
+gm.__namecall =
+    newcclosure(
+    function(self, ...)
+        local args = {...}
+        if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
+            if tostring(getcallingscript()) ~= "Framework" then
+                return
+            end
+        end
+        if not checkcaller() and getnamecallmethod() == "Kick" then
+            return
+        end
+        return namecall(self, unpack(args))
+  end)
+assert(getrawmetatable)
+gmt = getrawmetatable(game)
+setreadonly(gmt, false)
+old = gmt.__namecall
+gmt.__namecall =
+	newcclosure(
+		function(self, ...)
+		local args = {...}
+		if tostring(args[1]) == "BreathingHAMON" then
+			return
+		elseif tostring(args[1]) == "TeleportDetect" then
+			return
+		elseif tostring(args[1]) == "CHECKER_1" then
+			return
+		elseif tostring(args[1]) == "CHECKER" then
+			return
+		elseif tostring(args[1]) == "GUI_CHECK" then
+			return
+		elseif tostring(args[1]) == "OneMoreTime" then
+			return
+		elseif tostring(args[1]) == "checkingSPEED" then
+			return
+		elseif tostring(args[1]) == "BANREMOTE" then
+			return
+		elseif tostring(args[1]) == "PERMAIDBAN" then
+			return
+		elseif tostring(args[1]) == "KICKREMOTE" then
+			return
+		elseif tostring(args[1]) == "BR_KICKPC" then
+			return end
+
+		return old(self, ...)
+	end)
+--// Variables
+
+local Players = game:GetService("Players")
+local OldNameCall = nil
+
+--// Global Variables
+
+getgenv().SendNotifications = false -- Set to true if you want to get notified regularly.
+
+--// Anti Kick Hook
+
+OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
+    local NameCallMethod = getnamecallmethod()
+
+    if tostring(string.lower(NameCallMethod)) == "kick" then
+        if getgenv().SendNotifications == true then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Exunys Developer",
+                Text = "You almost got kicked! Successfully prevented.",
+                Icon = "rbxassetid://6238540373",
+                Duration = 3,
+            })
+        end
+        
+        return nil
+    end
+    
+    return OldNameCall(Self, ...)
+end)
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Exunys Developer",
+        Text = "Anti-Kick script loaded",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
+
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Anti-Cheat bypasser loaded!",
+                Text = "by: topcoldgaming#2734",
+                Icon = "rbxassetid://6238540373",
+                Duration = 3,
+            })
