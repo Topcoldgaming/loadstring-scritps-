@@ -1,0 +1,3072 @@
+-- Gui to Lua
+-- Version: 3.2
+-- works for da hood only
+
+-- Instances:
+
+local MainCore = Instance.new("ScreenGui")
+local Main_Stuff = Instance.new("Folder")
+local Shadow = Instance.new("ImageLabel")
+local Core = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Upper_Tab = Instance.new("Frame")
+local UI = Instance.new("Folder")
+local Underline_TAB = Instance.new("ImageLabel")
+local UTG = Instance.new("TextLabel")
+local Da_Hood = Instance.new("ImageLabel")
+local more_info = Instance.new("ImageButton")
+local credits = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local label = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local ui_by = Instance.new("TextLabel")
+local Script_by = Instance.new("TextLabel")
+local ui_scr_by = Instance.new("TextLabel")
+local paid_button = Instance.new("ImageButton")
+local Paid_side = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local label_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local extra_label = Instance.new("TextLabel")
+local money = Instance.new("TextLabel")
+local extra_info = Instance.new("TextLabel")
+local extra_info_2 = Instance.new("TextLabel")
+local extra_info_3 = Instance.new("TextLabel")
+local extra_info_4 = Instance.new("TextLabel")
+local extra_info_5 = Instance.new("TextLabel")
+local extra_info_6 = Instance.new("TextLabel")
+local extra_info_7 = Instance.new("TextLabel")
+local extra_info_8 = Instance.new("TextLabel")
+local extra_info_9 = Instance.new("TextLabel")
+local extra_info_10 = Instance.new("TextLabel")
+local extra_info_11 = Instance.new("TextLabel")
+local extra_info_12 = Instance.new("TextLabel")
+local link = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
+local Scroll_holder = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Button_1 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Info_Label = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Button_2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Info_Label_2 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Button_3 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Button_4 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Button_5 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Button_6 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_17 = Instance.new("UICorner")
+local Button_7 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Button_8 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Button_9 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Button_10 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Button_11 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Button_12 = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Button_13 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Button_14 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Scripts = Instance.new("Folder")
+
+--Properties:
+
+MainCore.Name = "MainCore"
+MainCore.Parent = game.CoreGui
+MainCore.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main_Stuff.Name = "Main_Stuff"
+Main_Stuff.Parent = MainCore
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Main_Stuff
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(0.21225071, 0, -0.0445859879, 0)
+Shadow.Selectable = true
+Shadow.Size = UDim2.new(0, 403, 0, 513)
+Shadow.Image = "rbxassetid://2591562205"
+Shadow.ImageColor3 = Color3.fromRGB(26, 26, 26)
+
+Core.Name = "Core"
+Core.Parent = Shadow
+Core.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Core.Position = UDim2.new(0.0372208431, 0, 0.0682261214, 0)
+Core.Selectable = true
+Core.Size = UDim2.new(0, 376, 0, 442)
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = Core
+
+Upper_Tab.Name = "Upper_Tab"
+Upper_Tab.Parent = Core
+Upper_Tab.BackgroundColor3 = Color3.fromRGB(92, 98, 97)
+Upper_Tab.Position = UDim2.new(0, 0, 0.0180995483, 0)
+Upper_Tab.Selectable = true
+Upper_Tab.Size = UDim2.new(0, 376, 0, 58)
+
+UI.Name = "UI"
+UI.Parent = Upper_Tab
+
+Underline_TAB.Name = "Underline_TAB"
+Underline_TAB.Parent = UI
+Underline_TAB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Underline_TAB.BackgroundTransparency = 1.000
+Underline_TAB.BorderSizePixel = 0
+Underline_TAB.Position = UDim2.new(-0.0984042659, 0, -2.06896544, 0)
+Underline_TAB.Size = UDim2.new(0, 447, 0, 379)
+Underline_TAB.Image = "rbxassetid://970262492"
+
+UTG.Name = "UTG"
+UTG.Parent = UI
+UTG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UTG.BackgroundTransparency = 1.000
+UTG.Position = UDim2.new(0.271276593, 0, -0.0517241396, 0)
+UTG.Size = UDim2.new(0, 200, 0, 50)
+UTG.Font = Enum.Font.PermanentMarker
+UTG.Text = "UTG"
+UTG.TextColor3 = Color3.fromRGB(243, 15, 224)
+UTG.TextSize = 71.000
+UTG.TextStrokeTransparency = 0.000
+UTG.TextWrapped = true
+
+Da_Hood.Name = "Da_Hood"
+Da_Hood.Parent = UI
+Da_Hood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Da_Hood.BackgroundTransparency = 1.000
+Da_Hood.BorderSizePixel = 0
+Da_Hood.Position = UDim2.new(0.0319148935, 0, 0.120689653, 0)
+Da_Hood.Size = UDim2.new(0, 123, 0, 44)
+Da_Hood.Image = "http://www.roblox.com/asset/?id=10674579205"
+
+more_info.Name = "more_info"
+more_info.Parent = UI
+more_info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+more_info.BackgroundTransparency = 1.000
+more_info.BorderSizePixel = 0
+more_info.Position = UDim2.new(0.898936212, 0, 0, 0)
+more_info.Size = UDim2.new(0, 27, 0, 25)
+more_info.Image = "rbxassetid://1249553900"
+
+credits.Name = "credits"
+credits.Parent = more_info
+credits.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(1.4074074, 0, 0.119999997, 0)
+credits.Size = UDim2.new(0, 137, 0, 81)
+credits.Visible = false
+
+UICorner_2.Parent = credits
+
+label.Name = "label"
+label.Parent = credits
+label.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label.Position = UDim2.new(0, 0, -0.0132743362, 0)
+label.Size = UDim2.new(0, 136, 0, 25)
+label.Font = Enum.Font.SourceSans
+label.Text = "Credits:"
+label.TextColor3 = Color3.fromRGB(255, 0, 213)
+label.TextSize = 23.000
+
+UICorner_3.Parent = label
+
+ui_by.Name = "ui_by"
+ui_by.Parent = credits
+ui_by.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ui_by.BackgroundTransparency = 1.000
+ui_by.BorderSizePixel = 0
+ui_by.Position = UDim2.new(0.0588235855, 0, 0.329345554, 0)
+ui_by.Size = UDim2.new(0, 119, 0, 17)
+ui_by.Font = Enum.Font.SourceSans
+ui_by.Text = "UI By: topcoldgaming"
+ui_by.TextColor3 = Color3.fromRGB(0, 0, 0)
+ui_by.TextSize = 14.000
+
+Script_by.Name = "Script_by"
+Script_by.Parent = credits
+Script_by.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Script_by.BackgroundTransparency = 1.000
+Script_by.BorderSizePixel = 0
+Script_by.Position = UDim2.new(0.0588235855, 0, 0.700863123, 0)
+Script_by.Size = UDim2.new(0, 119, 0, 17)
+Script_by.Font = Enum.Font.SourceSans
+Script_by.Text = "Credits to the owners of these scripts"
+Script_by.TextColor3 = Color3.fromRGB(0, 0, 0)
+Script_by.TextSize = 9.000
+
+ui_scr_by.Name = "ui_scr_by"
+ui_scr_by.Parent = credits
+ui_scr_by.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ui_scr_by.BackgroundTransparency = 1.000
+ui_scr_by.BorderSizePixel = 0
+ui_scr_by.Position = UDim2.new(0.0588235855, 0, 0.540587783, 0)
+ui_scr_by.Size = UDim2.new(0, 119, 0, 17)
+ui_scr_by.Font = Enum.Font.SourceSans
+ui_scr_by.Text = "UI-Scripts By: topcoldgaming"
+ui_scr_by.TextColor3 = Color3.fromRGB(0, 0, 0)
+ui_scr_by.TextSize = 12.000
+
+paid_button.Name = "paid_button"
+paid_button.Parent = UI
+paid_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+paid_button.BackgroundTransparency = 1.000
+paid_button.Position = UDim2.new(0.821808457, 0, 0.0172413811, 0)
+paid_button.Size = UDim2.new(0, 21, 0, 22)
+paid_button.Visible = false
+paid_button.Image = "rbxassetid://1465641818"
+
+Paid_side.Name = "Paid_side"
+Paid_side.Parent = paid_button
+Paid_side.BackgroundColor3 = Color3.fromRGB(105, 112, 111)
+Paid_side.Position = UDim2.new(3.19047761, 0, 0.272727281, 0)
+Paid_side.Size = UDim2.new(0, 156, 0, 223)
+Paid_side.Visible = false
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Paid_side
+
+label_2.Name = "label"
+label_2.Parent = Paid_side
+label_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+label_2.Position = UDim2.new(0, 0, -0.0269058291, 0)
+label_2.Size = UDim2.new(0, 156, 0, 26)
+label_2.Font = Enum.Font.SourceSans
+label_2.Text = "UTG"
+label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_2.TextSize = 25.000
+
+UICorner_5.Parent = label_2
+
+extra_label.Name = "extra_label"
+extra_label.Parent = label_2
+extra_label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_label.BackgroundTransparency = 1.000
+extra_label.Position = UDim2.new(0.160256416, 0, -0.538461566, 0)
+extra_label.Size = UDim2.new(0, 200, 0, 50)
+extra_label.Font = Enum.Font.SourceSans
+extra_label.Text = "Extra"
+extra_label.TextColor3 = Color3.fromRGB(24, 167, 255)
+extra_label.TextSize = 30.000
+extra_label.TextStrokeColor3 = Color3.fromRGB(27, 0, 163)
+extra_label.TextStrokeTransparency = 0.000
+
+money.Name = "money"
+money.Parent = label_2
+money.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+money.BackgroundTransparency = 1.000
+money.Position = UDim2.new(0.115384638, 0, 0.0769230425, 0)
+money.Size = UDim2.new(0, 39, 0, 20)
+money.Font = Enum.Font.SourceSans
+money.Text = "$5"
+money.TextColor3 = Color3.fromRGB(13, 218, 13)
+money.TextSize = 30.000
+
+extra_info.Name = "extra_info"
+extra_info.Parent = Paid_side
+extra_info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info.BackgroundTransparency = 1.000
+extra_info.Position = UDim2.new(0.0384615362, 0, 0.11659193, 0)
+extra_info.Size = UDim2.new(0, 143, 0, 14)
+extra_info.Font = Enum.Font.SourceSans
+extra_info.Text = "UTG Extra is the premium version"
+extra_info.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info.TextSize = 11.000
+
+extra_info_2.Name = "extra_info"
+extra_info_2.Parent = Paid_side
+extra_info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_2.BackgroundTransparency = 1.000
+extra_info_2.Position = UDim2.new(0.0384615362, 0, 0.165919289, 0)
+extra_info_2.Size = UDim2.new(0, 143, 0, 14)
+extra_info_2.Font = Enum.Font.SourceSans
+extra_info_2.Text = "of the basic one."
+extra_info_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_2.TextSize = 11.000
+
+extra_info_3.Name = "extra_info"
+extra_info_3.Parent = Paid_side
+extra_info_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_3.BackgroundTransparency = 1.000
+extra_info_3.Position = UDim2.new(0.0384615362, 0, 0.228699565, 0)
+extra_info_3.Size = UDim2.new(0, 143, 0, 14)
+extra_info_3.Font = Enum.Font.SourceSans
+extra_info_3.Text = "UTG Extra unlocks some buttons"
+extra_info_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_3.TextSize = 11.000
+
+extra_info_4.Name = "extra_info"
+extra_info_4.Parent = Paid_side
+extra_info_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_4.BackgroundTransparency = 1.000
+extra_info_4.Position = UDim2.new(0.0384615362, 0, 0.282511234, 0)
+extra_info_4.Size = UDim2.new(0, 143, 0, 14)
+extra_info_4.Font = Enum.Font.SourceSans
+extra_info_4.Text = "on this GUI, making"
+extra_info_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_4.TextSize = 11.000
+
+extra_info_5.Name = "extra_info"
+extra_info_5.Parent = Paid_side
+extra_info_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_5.BackgroundTransparency = 1.000
+extra_info_5.Position = UDim2.new(0.0384615362, 0, 0.345291495, 0)
+extra_info_5.Size = UDim2.new(0, 143, 0, 14)
+extra_info_5.Font = Enum.Font.SourceSans
+extra_info_5.Text = " your experience better!"
+extra_info_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_5.TextSize = 11.000
+
+extra_info_6.Name = "extra_info"
+extra_info_6.Parent = Paid_side
+extra_info_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_6.BackgroundTransparency = 1.000
+extra_info_6.Position = UDim2.new(0.0384615362, 0, 0.367713004, 0)
+extra_info_6.Size = UDim2.new(0, 143, 0, 14)
+extra_info_6.Font = Enum.Font.SourceSans
+extra_info_6.Text = "______________________"
+extra_info_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_6.TextSize = 11.000
+
+extra_info_7.Name = "extra_info"
+extra_info_7.Parent = Paid_side
+extra_info_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_7.BackgroundTransparency = 1.000
+extra_info_7.Position = UDim2.new(0.0384615362, 0, 0.439461887, 0)
+extra_info_7.Size = UDim2.new(0, 143, 0, 14)
+extra_info_7.Font = Enum.Font.SourceSans
+extra_info_7.Text = "If you are interested in buying "
+extra_info_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_7.TextSize = 11.000
+
+extra_info_8.Name = "extra_info"
+extra_info_8.Parent = Paid_side
+extra_info_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_8.BackgroundTransparency = 1.000
+extra_info_8.Position = UDim2.new(0.0384615362, 0, 0.497757852, 0)
+extra_info_8.Size = UDim2.new(0, 143, 0, 14)
+extra_info_8.Font = Enum.Font.SourceSans
+extra_info_8.Text = "the extra version, "
+extra_info_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_8.TextSize = 11.000
+
+extra_info_9.Name = "extra_info"
+extra_info_9.Parent = Paid_side
+extra_info_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_9.BackgroundTransparency = 1.000
+extra_info_9.Position = UDim2.new(0.0384615362, 0, 0.538116574, 0)
+extra_info_9.Size = UDim2.new(0, 143, 0, 14)
+extra_info_9.Font = Enum.Font.SourceSans
+extra_info_9.Text = "Contact Topcoldgaming,"
+extra_info_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_9.TextSize = 11.000
+
+extra_info_10.Name = "extra_info"
+extra_info_10.Parent = Paid_side
+extra_info_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_10.BackgroundTransparency = 1.000
+extra_info_10.Position = UDim2.new(0.0384615362, 0, 0.578475296, 0)
+extra_info_10.Size = UDim2.new(0, 143, 0, 14)
+extra_info_10.Font = Enum.Font.SourceSans
+extra_info_10.Text = "by clicking the button below"
+extra_info_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_10.TextSize = 11.000
+
+extra_info_11.Name = "extra_info"
+extra_info_11.Parent = Paid_side
+extra_info_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_11.BackgroundTransparency = 1.000
+extra_info_11.Position = UDim2.new(0.0384615362, 0, 0.614349723, 0)
+extra_info_11.Size = UDim2.new(0, 143, 0, 14)
+extra_info_11.Font = Enum.Font.SourceSans
+extra_info_11.Text = "and pasteing the link in your browser"
+extra_info_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_11.TextSize = 11.000
+
+extra_info_12.Name = "extra_info"
+extra_info_12.Parent = Paid_side
+extra_info_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+extra_info_12.BackgroundTransparency = 1.000
+extra_info_12.Position = UDim2.new(0.0384615362, 0, 0.641255558, 0)
+extra_info_12.Size = UDim2.new(0, 143, 0, 14)
+extra_info_12.Font = Enum.Font.SourceSans
+extra_info_12.Text = "_____________________"
+extra_info_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+extra_info_12.TextSize = 11.000
+
+link.Name = "link"
+link.Parent = Paid_side
+link.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+link.Position = UDim2.new(0.217948675, 0, 0.730941713, 0)
+link.Size = UDim2.new(0, 83, 0, 18)
+link.Font = Enum.Font.SourceSans
+link.Text = "discord.gg/64UqmWpgTy"
+link.TextColor3 = Color3.fromRGB(255, 255, 255)
+link.TextSize = 9.000
+
+UICorner_6.Parent = link
+
+UICorner_7.CornerRadius = UDim.new(0, 20)
+UICorner_7.Parent = Upper_Tab
+
+Scroll_holder.Name = "Scroll_holder"
+Scroll_holder.Parent = Core
+Scroll_holder.BackgroundColor3 = Color3.fromRGB(92, 98, 97)
+Scroll_holder.Position = UDim2.new(0.0319148935, 0, 0.264705896, 0)
+Scroll_holder.Size = UDim2.new(0, 353, 0, 311)
+
+UICorner_8.CornerRadius = UDim.new(0, 20)
+UICorner_8.Parent = Scroll_holder
+
+ScrollingFrame.Parent = Scroll_holder
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(92, 98, 97)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0113314446, 0, 0.0289389063, 0)
+ScrollingFrame.Size = UDim2.new(0, 343, 0, 293)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+ScrollingFrame.ScrollBarThickness = 11
+
+Button_1.Name = "Button_1"
+Button_1.Parent = ScrollingFrame
+Button_1.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_1.Position = UDim2.new(0.0349854231, 0, 0, 0)
+Button_1.Size = UDim2.new(0, 308, 0, 32)
+Button_1.Font = Enum.Font.RobotoMono
+Button_1.Text = "FE Mimic (Demon)"
+Button_1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_1.TextSize = 33.000
+
+UICorner_9.CornerRadius = UDim.new(0, 10)
+UICorner_9.Parent = Button_1
+
+Info_Label.Name = "Info_Label"
+Info_Label.Parent = Button_1
+Info_Label.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Info_Label.Position = UDim2.new(0.327922076, 0, 0.78125, 0)
+Info_Label.Size = UDim2.new(0, 106, 0, 7)
+Info_Label.Font = Enum.Font.SourceSans
+Info_Label.Text = "(Requires BoomBox gamepass)"
+Info_Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_Label.TextSize = 9.000
+
+UICorner_10.Parent = Info_Label
+
+Button_2.Name = "Button_2"
+Button_2.Parent = ScrollingFrame
+Button_2.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_2.Position = UDim2.new(0.0349854231, 0, 0.0247588418, 0)
+Button_2.Size = UDim2.new(0, 308, 0, 32)
+Button_2.Font = Enum.Font.RobotoMono
+Button_2.Text = "FE Titan"
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 33.000
+
+UICorner_11.CornerRadius = UDim.new(0, 10)
+UICorner_11.Parent = Button_2
+
+Info_Label_2.Name = "Info_Label"
+Info_Label_2.Parent = Button_2
+Info_Label_2.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+Info_Label_2.Position = UDim2.new(0.327922076, 0, 0.78125, 0)
+Info_Label_2.Size = UDim2.new(0, 106, 0, 7)
+Info_Label_2.Font = Enum.Font.SourceSans
+Info_Label_2.Text = "(Requires full Stats) (Do /e stats)"
+Info_Label_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_Label_2.TextSize = 9.000
+
+UICorner_12.Parent = Info_Label_2
+
+Button_3.Name = "Button_3"
+Button_3.Parent = ScrollingFrame
+Button_3.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_3.Position = UDim2.new(0.0349854231, 0, 0.0511254035, 0)
+Button_3.Size = UDim2.new(0, 308, 0, 32)
+Button_3.Font = Enum.Font.RobotoMono
+Button_3.Text = "Super Shazam"
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 33.000
+
+UICorner_13.CornerRadius = UDim.new(0, 10)
+UICorner_13.Parent = Button_3
+
+Button_4.Name = "Button_4"
+Button_4.Parent = ScrollingFrame
+Button_4.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_4.Position = UDim2.new(0.0349854231, 0, 0.0781350583, 0)
+Button_4.Size = UDim2.new(0, 308, 0, 32)
+Button_4.Font = Enum.Font.RobotoMono
+Button_4.Text = "FE D*ck"
+Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.TextSize = 33.000
+
+UICorner_14.CornerRadius = UDim.new(0, 10)
+UICorner_14.Parent = Button_4
+
+Button_5.Name = "Button_5"
+Button_5.Parent = ScrollingFrame
+Button_5.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_5.Position = UDim2.new(0.0349854231, 0, 0.105787799, 0)
+Button_5.Size = UDim2.new(0, 308, 0, 32)
+Button_5.Font = Enum.Font.RobotoMono
+Button_5.Text = "FE Katana"
+Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.TextSize = 33.000
+
+UICorner_15.CornerRadius = UDim.new(0, 10)
+UICorner_15.Parent = Button_5
+
+Button_6.Name = "Button_6"
+Button_6.Parent = ScrollingFrame
+Button_6.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_6.Position = UDim2.new(0.0349854231, 0, 0.133440524, 0)
+Button_6.Size = UDim2.new(0, 308, 0, 32)
+Button_6.Font = Enum.Font.RobotoMono
+Button_6.Text = "JoJo Stand"
+Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.TextSize = 33.000
+
+UICorner_16.CornerRadius = UDim.new(0, 10)
+UICorner_16.Parent = Button_6
+
+TextBox.Parent = Button_6
+TextBox.BackgroundColor3 = Color3.fromRGB(166, 166, 166)
+TextBox.Position = UDim2.new(0.30844155, 0, 0.78125, 0)
+TextBox.Size = UDim2.new(0, 118, 0, 7)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.PlaceholderText = "Input owner's Username"
+TextBox.Text = "Input owner's Username"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 10.000
+
+UICorner_17.Parent = TextBox
+
+Button_7.Name = "Button_7"
+Button_7.Parent = ScrollingFrame
+Button_7.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_7.Position = UDim2.new(0.0349854231, 0, 0.162057877, 0)
+Button_7.Size = UDim2.new(0, 308, 0, 32)
+Button_7.Font = Enum.Font.RobotoMono
+Button_7.Text = "Naruto Run"
+Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_7.TextSize = 33.000
+
+UICorner_18.CornerRadius = UDim.new(0, 10)
+UICorner_18.Parent = Button_7
+
+Button_8.Name = "Button_8"
+Button_8.Parent = ScrollingFrame
+Button_8.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_8.Position = UDim2.new(0.0349854231, 0, 0.190675259, 0)
+Button_8.Size = UDim2.new(0, 308, 0, 32)
+Button_8.Font = Enum.Font.RobotoMono
+Button_8.Text = "FE Psychopath"
+Button_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_8.TextSize = 33.000
+
+UICorner_19.CornerRadius = UDim.new(0, 10)
+UICorner_19.Parent = Button_8
+
+Button_9.Name = "Button_9"
+Button_9.Parent = ScrollingFrame
+Button_9.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_9.Position = UDim2.new(0.0349854268, 0, 0.217684925, 0)
+Button_9.Size = UDim2.new(0, 308, 0, 32)
+Button_9.Font = Enum.Font.RobotoMono
+Button_9.Text = "Fe Jesus"
+Button_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_9.TextSize = 33.000
+
+UICorner_20.CornerRadius = UDim.new(0, 10)
+UICorner_20.Parent = Button_9
+
+Button_10.Name = "Button_10"
+Button_10.Parent = ScrollingFrame
+Button_10.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_10.Position = UDim2.new(0.0349854268, 0, 0.244694576, 0)
+Button_10.Size = UDim2.new(0, 308, 0, 32)
+Button_10.Font = Enum.Font.RobotoMono
+Button_10.Text = "Fe Dance/Emote"
+Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_10.TextSize = 33.000
+
+UICorner_21.CornerRadius = UDim.new(0, 10)
+UICorner_21.Parent = Button_10
+
+Button_11.Name = "Button_11"
+Button_11.Parent = ScrollingFrame
+Button_11.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_11.Position = UDim2.new(0.0349854268, 0, 0.270418048, 0)
+Button_11.Size = UDim2.new(0, 308, 0, 32)
+Button_11.Font = Enum.Font.RobotoMono
+Button_11.Text = "Fe WalkOnWalls [Z]"
+Button_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_11.TextSize = 33.000
+
+UICorner_22.CornerRadius = UDim.new(0, 10)
+UICorner_22.Parent = Button_11
+
+Button_12.Name = "Button_12"
+Button_12.Parent = ScrollingFrame
+Button_12.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_12.Position = UDim2.new(0.0408163294, 0, 0.294855356, 0)
+Button_12.Size = UDim2.new(0, 308, 0, 32)
+Button_12.Font = Enum.Font.RobotoMono
+Button_12.Text = "Gun Modifier"
+Button_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_12.TextSize = 33.000
+
+UICorner_23.CornerRadius = UDim.new(0, 10)
+UICorner_23.Parent = Button_12
+
+Button_13.Name = "Button_13"
+Button_13.Parent = ScrollingFrame
+Button_13.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_13.Position = UDim2.new(0.0408163294, 0, 0.321221918, 0)
+Button_13.Size = UDim2.new(0, 308, 0, 32)
+Button_13.Font = Enum.Font.RobotoMono
+Button_13.Text = "Keystrokes"
+Button_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_13.TextSize = 33.000
+
+UICorner_24.CornerRadius = UDim.new(0, 10)
+UICorner_24.Parent = Button_13
+
+Button_14.Name = "Button_14"
+Button_14.Parent = ScrollingFrame
+Button_14.BackgroundColor3 = Color3.fromRGB(167, 1, 173)
+Button_14.Position = UDim2.new(0.0408163294, 0, 0.346302301, 0)
+Button_14.Size = UDim2.new(0, 308, 0, 32)
+Button_14.Font = Enum.Font.RobotoMono
+Button_14.Text = "FE Ear R*pe"
+Button_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_14.TextSize = 33.000
+
+UICorner_25.CornerRadius = UDim.new(0, 10)
+UICorner_25.Parent = Button_14
+
+Scripts.Name = "Scripts"
+Scripts.Parent = MainCore
+
+-- Scripts:
+
+local function XGRIU_fake_script() -- credits.button_toggle 
+	local script = Instance.new('LocalScript', credits)
+
+	script.Parent.Parent.Activated:Connect(function()
+		if script.Parent.Visible == true then
+			script.Parent.Visible = false
+		elseif script.Parent.Visible == false then
+			script.Parent.Visible = true
+		end
+	end)
+end
+coroutine.wrap(XGRIU_fake_script)()
+local function THFQ_fake_script() -- link.LocalScript 
+	local script = Instance.new('LocalScript', link)
+
+	script.Parent.Activated:Connect(function()
+		setclipboard("https://discord.gg/64UqmWpgTy")
+		local notifSound = Instance.new("Sound",workspace)
+		notifSound.PlaybackSpeed = 1.5
+		notifSound.Volume = 0.25
+		notifSound.SoundId = "rbxassetid://170765130"
+		notifSound.PlayOnRemove = true
+		notifSound:Destroy()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Link Copied!";
+			Text = "";
+			Time = 10;
+			Icon = "rbxassetid://505845268";
+		})
+	end)
+end
+coroutine.wrap(THFQ_fake_script)()
+local function NYEGQS_fake_script() -- Paid_side.LocalScript 
+	local script = Instance.new('LocalScript', Paid_side)
+
+	script.Parent.Parent.Activated:Connect(function()
+		if script.Parent.Visible == true then
+			script.Parent.Visible = false
+		elseif script.Parent.Visible == false then
+			script.Parent.Visible = true
+		end
+	end)
+end
+coroutine.wrap(NYEGQS_fake_script)()
+local function DXNTXX_fake_script() -- Upper_Tab.LocalScript 
+	local script = Instance.new('LocalScript', Upper_Tab)
+
+	local lib = {RainbowColorValue = 0, HueSelectionPosition = 0}
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
+	
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	local Mouse = LocalPlayer:GetMouse()
+	
+	local function MakeDraggable(topbarobject, object)
+		local Dragging = nil
+		local DragInput = nil
+		local DragStart = nil
+		local StartPosition = nil
+	
+		local function Update(input)
+			local Delta = input.Position - DragStart
+			local pos =
+				UDim2.new(
+					StartPosition.X.Scale,
+					StartPosition.X.Offset + Delta.X,
+					StartPosition.Y.Scale,
+					StartPosition.Y.Offset + Delta.Y
+				)
+			local Tween = TweenService:Create(object, TweenInfo.new(0.2), {Position = pos})
+			Tween:Play()
+		end
+	
+		topbarobject.InputBegan:Connect(
+			function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					Dragging = true
+					DragStart = input.Position
+					StartPosition = object.Position
+	
+					input.Changed:Connect(
+						function()
+							if input.UserInputState == Enum.UserInputState.End then
+								Dragging = false
+							end
+						end
+					)
+				end
+			end
+		)
+	
+		topbarobject.InputChanged:Connect(
+			function(input)
+				if
+					input.UserInputType == Enum.UserInputType.MouseMovement or
+					input.UserInputType == Enum.UserInputType.Touch
+				then
+					DragInput = input
+				end
+			end
+		)
+	
+		UserInputService.InputChanged:Connect(
+			function(input)
+				if input == DragInput and Dragging then
+					Update(input)
+				end
+			end
+		)
+	end
+	
+	MakeDraggable(script.Parent, script.Parent.Parent.Parent)
+end
+coroutine.wrap(DXNTXX_fake_script)()
+local function UGPVWJ_fake_script() -- Button_1.LocalScript 
+	local script = Instance.new('LocalScript', Button_1)
+
+	script.Parent.Activated:Connect(function()
+		-- Gui to Lua
+		-- Version: 3.2
+	
+		-- Instances:
+	
+		local Script_Hotkeys = Instance.new("ScreenGui")
+		local Main = Instance.new("Frame")
+		local UICorner = Instance.new("UICorner")
+		local Top_Bar = Instance.new("Frame")
+		local UICorner_2 = Instance.new("UICorner")
+		local TextLabel = Instance.new("TextLabel")
+		local Keys = Instance.new("Folder")
+		local _1 = Instance.new("TextLabel")
+		local _2 = Instance.new("TextLabel")
+		local _3 = Instance.new("TextLabel")
+		local _4 = Instance.new("TextLabel")
+		local _5 = Instance.new("TextLabel")
+		local _6 = Instance.new("TextLabel")
+		local _7 = Instance.new("TextLabel")
+		local _8 = Instance.new("TextLabel")
+		local _9 = Instance.new("TextLabel")
+	
+		--Properties:
+	
+		Script_Hotkeys.Name = "Script_Hotkeys"
+		Script_Hotkeys.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+		Script_Hotkeys.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		Main.Name = "Main"
+		Main.Parent = Script_Hotkeys
+		Main.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+		Main.Position = UDim2.new(0.0185185187, 0, 0.169851393, 0)
+		Main.Size = UDim2.new(0, 126, 0, 257)
+	
+		UICorner.Parent = Main
+	
+		Top_Bar.Name = "Top_Bar"
+		Top_Bar.Parent = Main
+		Top_Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Top_Bar.Size = UDim2.new(0, 126, 0, 32)
+	
+		UICorner_2.Parent = Top_Bar
+	
+		TextLabel.Parent = Top_Bar
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Size = UDim2.new(0, 126, 0, 32)
+		TextLabel.Font = Enum.Font.SourceSans
+		TextLabel.Text = "HotKeys"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 27.000
+	
+		Keys.Name = "Keys"
+		Keys.Parent = Main
+	
+		_1.Name = "1"
+		_1.Parent = Keys
+		_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_1.BackgroundTransparency = 1.000
+		_1.Position = UDim2.new(0, 0, 0.124513619, 0)
+		_1.Size = UDim2.new(0, 126, 0, 19)
+		_1.Font = Enum.Font.SourceSans
+		_1.Text = "X - Go invis"
+		_1.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_1.TextSize = 27.000
+	
+		_2.Name = "2"
+		_2.Parent = Keys
+		_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_2.BackgroundTransparency = 1.000
+		_2.Position = UDim2.new(0, 0, 0.198443577, 0)
+		_2.Size = UDim2.new(0, 126, 0, 19)
+		_2.Font = Enum.Font.SourceSans
+		_2.Text = "B - Jumpscare"
+		_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_2.TextSize = 27.000
+	
+		_3.Name = "3"
+		_3.Parent = Keys
+		_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_3.BackgroundTransparency = 1.000
+		_3.Position = UDim2.new(0, 0, 0.272373527, 0)
+		_3.Size = UDim2.new(0, 126, 0, 19)
+		_3.Font = Enum.Font.SourceSans
+		_3.Text = "H - Scare Mouse"
+		_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_3.TextSize = 27.000
+	
+		_4.Name = "4"
+		_4.Parent = Keys
+		_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_4.BackgroundTransparency = 1.000
+		_4.Position = UDim2.new(0, 0, 0.357976645, 0)
+		_4.Size = UDim2.new(0, 126, 0, 19)
+		_4.Font = Enum.Font.SourceSans
+		_4.Text = "C -nhumming sound"
+		_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_4.TextSize = 27.000
+	
+		_5.Name = "5"
+		_5.Parent = Keys
+		_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_5.BackgroundTransparency = 1.000
+		_5.Position = UDim2.new(0, 0, 0.435797662, 0)
+		_5.Size = UDim2.new(0, 126, 0, 19)
+		_5.Font = Enum.Font.SourceSans
+		_5.Text = "V - footsteps sound"
+		_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_5.TextSize = 27.000
+	
+		_6.Name = "6"
+		_6.Parent = Keys
+		_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_6.BackgroundTransparency = 1.000
+		_6.Position = UDim2.new(0, 0, 0.509727597, 0)
+		_6.Size = UDim2.new(0, 126, 0, 19)
+		_6.Font = Enum.Font.SourceSans
+		_6.Text = "Z - Play Scary Music"
+		_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_6.TextSize = 27.000
+	
+		_7.Name = "7"
+		_7.Parent = Keys
+		_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_7.BackgroundTransparency = 1.000
+		_7.Position = UDim2.new(0, 0, 0.583657563, 0)
+		_7.Size = UDim2.new(0, 126, 0, 19)
+		_7.Font = Enum.Font.SourceSans
+		_7.Text = "T - Walk Thingy"
+		_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_7.TextSize = 27.000
+	
+		_8.Name = "8"
+		_8.Parent = Keys
+		_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_8.BackgroundTransparency = 1.000
+		_8.Position = UDim2.new(0, 0, 0.657587528, 0)
+		_8.Size = UDim2.new(0, 126, 0, 19)
+		_8.Font = Enum.Font.SourceSans
+		_8.Text = "J - Attacks While In Mimic"
+		_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_8.TextSize = 27.000
+	
+		_9.Name = "9"
+		_9.Parent = Keys
+		_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		_9.BackgroundTransparency = 1.000
+		_9.Position = UDim2.new(0, 0, 0.731517494, 0)
+		_9.Size = UDim2.new(0, 126, 0, 19)
+		_9.Font = Enum.Font.SourceSans
+		_9.Text = "Q - Scary Laugh"
+		_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+		_9.TextSize = 27.000
+	
+		-- Scripts:
+	
+		local function BFQBLRW_fake_script() -- Main.LocalScript 
+			local script = Instance.new('LocalScript', Main)
+	
+			script.Parent.Draggable = true
+			script.Parent.Selectable = true
+			script.Parent.Active = true
+		end
+		coroutine.wrap(BFQBLRW_fake_script)()
+		getgenv().JumpscareSound = {
+			"8280196339", -- put audios in like this for a random jumpscare sound 
+			"7588947168" -- make sure to not put a "," on the last id
+		} 
+	
+		getgenv().Settings = {
+			['HoverAnims'] = 'On', --[On / Off] 
+			['DaMimicSpeed'] = '100', -- MUST BE A NUMBER
+		}
+	
+		loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaMimic", true))()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+			Title = "Mimic Script";
+			Text = "Credits to Icxy#0001 for the script!";
+			Time = 20;
+			Icon = "";
+			Button1 = "Good Job!";
+		})
+	end)
+end
+coroutine.wrap(UGPVWJ_fake_script)()
+local function ONXMEKR_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+
+	script.Parent.Activated:Connect(function()
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid;
+		game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HairAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HatAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RootRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.LeftFoot.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
+		wait(0.5)
+		Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
+		wait(1)
+	
+		game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HairAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HatAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RootRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.LeftFoot.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
+		wait(0.5)
+		Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+		wait(1)
+	
+		game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HairAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HatAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RootRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.LeftFoot.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
+		wait(0.5)
+		Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+		wait(1)
+	
+		game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.FaceFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HairAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.HatAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.Head.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand.LeftGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightHand.RightGripAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RootRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.LeftHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.RightHipRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistCenterAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.WaistBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.WaistRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyFrontAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.BodyBackAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
+		game.Players.LocalPlayer.Character.LeftFoot.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg.LeftKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightKneeRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg.RightAnkleRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm.LeftShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm.RightShoulderRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm.RightWristRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
+		wait(0.5)
+		Humanoid:FindFirstChild("HeadScale"):Destroy()
+	end)
+end
+coroutine.wrap(ONXMEKR_fake_script)()
+local function LZWRSXC_fake_script() -- Button_3.LocalScript 
+	local script = Instance.new('LocalScript', Button_3)
+
+	script.Parent.Activated:Connect(function()
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local plr = game.Players.LocalPlayer
+		local torso = plr.Character.Head
+		local flying = false
+		local deb = true
+		local ctrl = {f = 0, b = 0, l = 0, r = 0}
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		local maxspeed = 5000
+		local speed = 5000
+		local player = game.Players.LocalPlayer
+		local char = game.Players.LocalPlayer.Character
+		local cam = workspace.CurrentCamera
+		local uis = game:GetService("UserInputService")
+		local hoh = Instance.new("Animation", game.Workspace)
+	
+		hoh.Name = "Fly"
+		hoh.AnimationId = "rbxassetid://3541044388"
+		local heh = Instance.new("Animation", game.Workspace)
+		heh.Name = "Hover"
+		heh.AnimationId = "rbxassetid://3541114300"
+		local wPressed = false
+		local sPressed = false
+		local aPressed = false
+		local dPressed = false
+		local idleAnim = char.Humanoid:LoadAnimation(game.Workspace.Fly)
+		local forwardAnim = char.Humanoid:LoadAnimation(game.Workspace.Hover)
+		function Fly()
+			local bg = Instance.new("BodyGyro", torso)
+			bg.P = 9e4
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			bg.cframe = torso.CFrame
+			local bv = Instance.new("BodyVelocity", torso)
+			bv.velocity = Vector3.new(0,0.1,0)
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+			repeat wait()
+				plr.Character.Humanoid.PlatformStand = true
+				if ctrl.l + ctrl.r ~= 100000 or ctrl.f + ctrl.b ~= 10000 then
+					speed = speed+.0+(speed/maxspeed)
+					if speed > maxspeed then
+						speed = maxspeed
+					end
+				elseif not (ctrl.l + ctrl.r ~= 5 or ctrl.f + ctrl.b ~= 5) and speed ~= 5 then
+					speed = speed-5
+					if speed > 5 then
+						speed = -2
+					end
+				end
+				if (ctrl.l + ctrl.r) ~= 5 or (ctrl.f + ctrl.b) ~= 5 then
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+				elseif (ctrl.l + ctrl.r) == 5 and (ctrl.f + ctrl.b) == 5 and speed ~= 5 then
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				else
+					bv.velocity = Vector3.new(0,0.1,0)
+				end
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+			until not flying
+			ctrl = {f = 0, b = 0, l = 0, r = 0}
+			lastctrl = {f = 0, b = 0, l = 0, r = 0}
+			speed = 5
+			bg:Destroy()
+			bv:Destroy()
+			plr.Character.Humanoid.PlatformStand = false
+		end
+	
+		mouse.KeyDown:connect(function(key)
+			if key:lower() == "x" then
+				if flying then flying = false
+					forwardAnim:Stop()
+					idleAnim:Stop()
+				else
+					flying = true
+					Fly()
+					forwardAnim:Stop()
+					idleAnim:Stop()
+				end
+			elseif key:lower() == "w" then
+				ctrl.f = 45
+				wPressed = false
+			elseif key:lower() == "s" then
+				ctrl.b = -45
+				sPressed = false
+			elseif key:lower() == "a" then
+				ctrl.l = -45
+				aPressed = false
+			elseif key:lower() == "d" then
+				ctrl.r = 45
+				dPressed = false
+			end
+		end)
+		mouse.KeyUp:connect(function(key)
+			if key:lower() == "w" then
+				ctrl.f = 0
+				wPressed = true
+				forwardAnim:Play()
+			elseif key:lower() == "s" then
+				ctrl.b = 0
+				sPressed = true
+				forwardAnim:Play()
+			elseif key:lower() == "a" then
+				ctrl.l = 0
+				aPressed = true
+				forwardAnim:Play()
+			elseif key:lower() == "d" then
+				ctrl.r = 0
+				dPressed = true
+				forwardAnim:Play()
+			end
+		end)
+		Fly()
+		while wait() do
+			if flying then
+				idleAnim:Stop()
+				if not wPressed then
+					idleAnim:Play()
+				end
+				if not sPressed then
+	
+					idleAnim:Play()
+				end
+				if not aPressed then
+					idleAnim:Play()
+				end
+				if not dPressed then
+					idleAnim:Play()
+				end
+			else
+				forwardAnim:Stop()
+				if wPressed then
+					forwardAnim:Stop()
+				end
+				if sPressed then
+					forwardAnim:Stop()
+				end
+				if aPressed then
+					forwardAnim:Stop()
+				end
+				if dPressed then
+					forwardAnim:Stop()
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(LZWRSXC_fake_script)()
+local function OFZHS_fake_script() -- Button_4.LocalScript 
+	local script = Instance.new('LocalScript', Button_4)
+
+	script.Parent.Activated:Connect(function()
+		local Player = game.Players.LocalPlayer
+		local player = game.Players.LocalPlayer
+		local d = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+		local k = game.Workspace.Ignored.Shop["[Bat] - $250"]
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = k.Head.CFrame + Vector3.new(0, 3, 0)
+		if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - k.Head.Position).Magnitude <= 50 then
+			wait(.2)
+			fireclickdetector(k:FindFirstChild("ClickDetector"), 4)
+			toolf = game.Players.LocalPlayer.Backpack:WaitForChild("[Bat]")
+			toolf.Parent = game.Players.LocalPlayer.Character
+			wait()
+			game.Players.LocalPlayer.Character:WaitForChild("[Bat]")
+			game.Players.LocalPlayer.Character:WaitForChild("[Bat]").Grip = CFrame.new(-2.4000001, -0.699999988, 0, 0, 1, -0, -1, 0, -0, 0, 0, 1)
+			game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripForward = Vector3.new(0, -1, -0)
+			game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripPos = Vector3.new(1.2111, 1.11114, 1.8111)
+			game.Players.LocalPlayer.Character:WaitForChild("[Bat]").GripUp = Vector3.new(-500000, 404, 5000000)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(d)
+		end
+	end)
+end
+coroutine.wrap(OFZHS_fake_script)()
+local function SMJYIET_fake_script() -- Button_5.LocalScript 
+	local script = Instance.new('LocalScript', Button_5)
+
+	script.Parent.Activated:Connect(function()
+		--anti-cheat
+		repeat
+			wait()
+		until game:IsLoaded()
+		local gm = getrawmetatable(game)
+		setreadonly(gm, false)
+		local namecall = gm.__namecall
+		gm.__namecall =
+			newcclosure(
+				function(self, ...)
+					local args = {...}
+					if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
+					if tostring(getcallingscript()) ~= "Framework" then
+						return
+					end
+				end
+					if not checkcaller() and getnamecallmethod() == "Kick" then
+					return
+				end
+					return namecall(self, unpack(args))
+				end)
+		local count_knife = 0
+		local char = game:GetService('Players').LocalPlayer.Character
+		-------------------------------------
+		function GetKnife()
+			wait(.1)
+			char.HumanoidRootPart.CFrame = CFrame.new(-680.2, 19.75, -254.97)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-115.495, 19.756, -453.45)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(33, 19.75, -184.6)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(243.495, 62, -450.5)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-103.53, 19.75, -220.21)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-581.775, 19.7549, -485.23)
+			wait(2)
+			char.HumanoidRootPart.CFrame = CFrame.new(-399.655, 19.7552, -461.55)
+			wait(2)
+			count_knife = count_knife + 1
+		end
+	
+		wait()
+		local X = char.HumanoidRootPart.CFrame.X
+		local Y = char.HumanoidRootPart.CFrame.Y
+		local Z = char.HumanoidRootPart.CFrame.Z
+		GetKnife()
+		repeat GetKnife() until count_knife == 2
+		char.HumanoidRootPart.CFrame = CFrame.new(X,Y+5,Z)
+		wait(0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(1, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(2, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(3, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(4, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(5, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(5, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+	
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(6, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(7, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(8, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(9, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(10, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(11, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(12, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripPos = Vector3.new(13, 0, 0.1)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripForward = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripRight = Vector3.new(0, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].GripUp = Vector3.new(-1, 0, 0)
+		game.Players.LocalPlayer.Backpack["[Knife]"].Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(SMJYIET_fake_script)()
+local function KKDMNF_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local owner_ = script.Parent.Text
+	local button_ = script.Parent.Parent
+	button_.Activated:Connect(function()
+		-----------------------------
+		-- By Lerkermer + SwagminComp
+		-- Script Name: Destiny Stand
+		-----------------------------------------------------------
+		getgenv().Settings =  {
+			["Owner"] = owner_ -- Insert a username here!
+		}
+		
+		getgenv().Commands =  {
+			["Summon"] = "Summon!",
+			["Multi"] = "Multi!",
+			["Grow"] = "Grow!",
+			["Aura"] = "Aura!",
+			["Vanish"] = "Vanish!",
+			["Mimic"] = "Mimic!",
+			["Barrage"] = "Barrage!",
+			["Stab"] = "Stab!",
+			["Banish"] = "Banish!",
+		}
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
+		--------------------------------------------------------------------------------------------
+	end)
+end
+coroutine.wrap(KKDMNF_fake_script)()
+local function QITWCBJ_fake_script() -- Button_7.LocalScript 
+	local script = Instance.new('LocalScript', Button_7)
+
+	script.Parent.Activated:Connect(function()
+		local Player = game.Players.LocalPlayer
+		local loader = function()
+			local notifSound = Instance.new("Sound",workspace)
+			notifSound.PlaybackSpeed = 1
+			notifSound.Volume = 100
+			notifSound.SoundId = "rbxassetid://4034373119"
+			notifSound.PlayOnRemove = true
+			notifSound:Destroy()
+		end
+		loader()
+		local  MyStand = "DxskTilIDawn"
+		local SuperJumpEnabled = true
+	
+		getgenv().Toggled = false
+		local UIS = game:GetService("UserInputService")
+		UIS.InputBegan:connect(function(input,gameProcessed)
+			if input.UserInputType == Enum.UserInputType.Keyboard then
+				if input.KeyCode == Enum.KeyCode.H then
+					if UIS:GetFocusedTextBox() == nil then
+						if getgenv().Toggled == false then
+							getgenv().Toggled = true
+						else
+							getgenv().Toggled = true
+						end;end;end;end;end)
+	
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+		local Cookies = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Roll)
+		local OriginalKeyUpValue = 0
+		local Anim = Instance.new("Animation" )
+		Anim.AnimationId = "rbxassetid://2788290270"
+		local Hover = Instance.new("Animation", game.Workspace)
+		Hover.Name = "Hover"
+		Hover.AnimationId = "rbxassetid://698251653"
+		local LeftPunch = Instance.new("Animation",  game.ReplicatedStorage.ClientAnimations)LeftPunch.Name = "LeftPunch"
+		LeftPunch.AnimationId = "rbxassetid://2788308661"
+		local LeftAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.LeftPunch)
+		local CoreUI = Instance.new("ScreenGui")
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+		CoreUI.Parent = game.CoreGui
+		local SaveLocation = nil
+		local RigWalk = nil
+		local RigIdle = nil
+		local InTimeErase = false
+	
+		local Pointing = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
+		Pointing.AnimationId = "rbxassetid://507770453"
+	
+		local UNMASKKK = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
+		UNMASKKK.Name = "Unmask"
+		UNMASKKK.AnimationId = "rbxassetid://3380629232"
+	
+		local MASKKK = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
+		MASKKK.Name = "Mask"
+		MASKKK.AnimationId = "rbxassetid://3380627692"
+	
+		local Poter = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(Pointing)
+		Poter.Looped = true
+		Poter.Priority = Enum.AnimationPriority.Action
+	
+		local WalkAnimation = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
+		WalkAnimation.AnimationId = "rbxassetid://2510198475"
+	
+		local Idle = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
+		Idle.AnimationId = "rbxassetid://507766388"
+	
+		local OldChar = LocalPlayer.Character
+		local MaskAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Mask)
+		local UnmaskAnim = LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Unmask)
+	
+		function FoV()
+			local fov = coroutine.wrap(function()
+				local Camera = workspace.Camera
+				for i = 1, 20 do
+					game.TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 8*i}):Play()
+					wait(0.01)
+				end
+				for i = 1, 20 do
+					game.TweenService:Create(Camera, TweenInfo.new(0.5), {FieldOfView = 160-i*4.5}):Play()
+					wait(0.01)
+				end
+			end)
+			fov()
+		end
+	
+		local WalkSpeed = false
+	
+		local function rm()
+			for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if v.Name == "OriginalPosition" then
+					v:Destroy()
+				elseif v.Name == "OriginalSize" then
+					v:Destroy()
+				elseif v.Name == "AvatarPartScaleType" then
+					v:Destroy()
+				end
+			end
+		end
+	
+	
+		function Lighting()
+			if game.Lighting:FindFirstChild("ERASE") == nil then
+				local sound5 = Instance.new("Sound", CoreUI)
+				sound5.Volume = 0.1
+				sound5.Name = "ERASE"
+				sound5.Looped = true
+				sound5.SoundId = "rbxassetid://3167092959"
+				sound5:Play()
+	
+				game.Lighting.Sky.Parent = workspace
+				game:GetObjects("rbxassetid://6546113226")[1].Parent=game.Lighting
+	
+			else
+				workspace.Sky.Parent = game.Lighting
+				CoreUI:FindFirstChild("ERASE"):Destroy()
+				game.Lighting:FindFirstChild("ERASE"):Destroy()
+			end
+		end
+	
+		function TimeEraseUI()
+			local sound5 = Instance.new("Sound", CoreUI)
+			sound5.Volume = 0.1
+			sound5.SoundId = "rbxassetid://6546128175"
+			sound5:Play()
+	
+			local Image = Instance.new("ImageLabel", CoreUI)
+			Image.Image = "http://www.roblox.com/asset/?id=6546043746"
+			Image.BackgroundTransparency = 1
+			Image.AnchorPoint = Vector2.new(0.5, 0.5)
+			Image.Size = UDim2.fromScale(1, 1)
+			Image.Position = UDim2.fromScale(-0.5, 0.5)
+			delay(0, function()
+				for i = 0, 1, 0.1 do
+					Image.Position = UDim2.fromScale(-Image.Position.X.Scale+i, 0.5)
+					Image.ImageTransparency = Image.ImageTransparency+i
+					wait(.01)
+				end
+				Image:Destroy()
+				sound5:Destroy()
+			end)
+		end
+	
+	
+		function ModelCharacter()
+			if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") == nil then
+				local MODEL = Instance.new("Model", workspace)
+				MODEL.Name = LocalPlayer.Name.."StringKOD"
+	
+				OldChar.Humanoid:UnequipTools()
+	
+				for i, v in pairs(OldChar:GetChildren()) do 
+					if (v:IsA("BasePart")  or v:IsA("MeshPart")) and v.Parent:FindFirstChildOfClass("Humanoid") and v.Name ~= "HumanoidRootPart" then
+						local Part = v:Clone()
+						Part.Parent = MODEL
+						Part.Name = v.Name
+						Part.Material = Enum.Material.ForceField
+						Part.CFrame = v.CFrame
+						Part.Transparency = 0.5 
+						Part.BrickColor = BrickColor.Red()
+						Part.CanCollide = false
+						Part.Anchored = true
+						for i, v  in pairs(Part:GetChildren()) do 
+							if v.ClassName ~= "SpecialMesh" then
+								v:Destroy()
+							end
+						end
+					end
+				end
+				local NewCharacter = game:GetObjects("rbxassetid://6547055500")[1]
+				NewCharacter.Parent = MODEL
+				NewCharacter.Name = "Idaro"
+	
+				workspace.Camera.CameraSubject = NewCharacter.Humanoid
+				SaveLocation = OldChar.HumanoidRootPart.CFrame
+				InTimeErase = true
+				NewCharacter.HumanoidRootPart.CFrame = SaveLocation
+	
+				RigIdle = NewCharacter:WaitForChild("Humanoid"):LoadAnimation(Idle)
+				RigIdle.Looped = true
+				RigIdle.Priority = Enum.AnimationPriority.Action
+				RigWalk = NewCharacter:WaitForChild("Humanoid"):LoadAnimation(WalkAnimation)
+				RigWalk.Looped = true
+				RigWalk.Priority = Enum.AnimationPriority.Action
+				WalkSpeed = true
+				RigIdle:Play()
+			else
+				InTimeErase = false
+				WalkSpeed = false
+				workspace.Camera.CameraSubject =  OldChar.Humanoid
+				OldChar.HumanoidRootPart.CFrame =  workspace:FindFirstChild(LocalPlayer.Name.."StringKOD").Idaro.HumanoidRootPart.CFrame
+				workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):Destroy()
+			end
+		end
+	
+		function Slide()
+			local XD = OldChar.Humanoid:LoadAnimation(Anim)
+			XD:Play()
+			XD.TimePosition = 0.15
+			XD.Looped = false
+			XD:AdjustSpeed(1.1)
+		end
+	
+		function AddVelocity(Vel, Char)
+			Char.HumanoidRootPart.Velocity = Char.HumanoidRootPart.Velocity+Vel
+		end
+	
+		local IsJump = false
+	
+		function Jumping()
+			if IsJump == false then
+				return false
+			else
+				return true
+			end
+		end
+	
+		local Mouse = LocalPlayer:GetMouse()
+	
+		local MoveDirection = Vector3.new(0,0,0)
+		local WSpped = 0 
+		local LeftSpeed = 0
+		local UpSpeed = 0
+	
+		function IdleRigXD()
+			if RigIdle and RigWalk.IsPlaying and WSpped == 0 and LeftSpeed == 0 and UpSpeed == 0 then
+				RigIdle:Play()
+				RigWalk:Stop()
+			end
+		end
+	
+		function WalkRigXD()
+			if RigWalk and RigIdle.IsPlaying then
+				RigIdle:Stop()
+				RigWalk:Play()
+			end
+		end
+	
+		Mouse.KeyDown:Connect(function(KeyDownXD)
+			if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") then
+				if KeyDownXD == "w" then
+					WSpped = -1
+					WalkRigXD()
+				elseif KeyDownXD == "a" then
+					LeftSpeed = -1
+					WalkRigXD()
+				elseif KeyDownXD == "d" then
+					LeftSpeed = 1
+					WalkRigXD()
+				elseif KeyDownXD == "s" then
+					WSpped = 1
+					WalkRigXD()
+				end
+			end
+		end)
+	
+		Mouse.KeyUp:Connect(function(KeyDownXD)
+			if KeyDownXD == "w" then
+				WSpped = 0
+				IdleRigXD()
+			elseif KeyDownXD == "a" then
+				LeftSpeed = 0
+				IdleRigXD()
+			elseif KeyDownXD == "d" then
+				LeftSpeed = -0
+				IdleRigXD()
+			elseif KeyDownXD == "s" then
+				WSpped = 0
+				IdleRigXD()
+			end
+		end)
+	
+		local CD = false
+		local uis = game:GetService("UserInputService")
+	
+		uis.InputBegan:Connect(function(i, XD)
+			if i.KeyCode == Enum.KeyCode.H and XD == false then
+				if SuperJumpEnabled == false then
+					SuperJumpEnabled = true
+				elseif SuperJumpEnabled == true then
+					SuperJumpEnabled = false
+				end
+			end
+		end)
+	
+		uis.InputBegan:Connect(function(i, XD)
+			if i.KeyCode == Enum.KeyCode.Space and XD == false then
+				if workspace:FindFirstChild(LocalPlayer.Name.."StringKOD") == nil then
+					if Jumping() == true and not Poter.IsPlaying then
+						AddVelocity(OldChar.HumanoidRootPart.CFrame.LookVector*150, OldChar)
+						IsJump = false
+						Cookies:Stop()
+						CD = true
+						Slide()
+						repeat wait() until workspace:FindPartOnRayWithWhitelist(Ray.new(OldChar.HumanoidRootPart.Position, Vector3.new(0, -4 * OldChar.HumanoidRootPart.Size.y, 0)), { workspace.MAP })
+						CD = false
+					end
+				else
+					workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):FindFirstChild("Idaro").Humanoid:ChangeState(3)
+				end
+			end
+		end)
+	
+		function StopAudio()
+			OldChar.LowerTorso.BOOMBOXSOUND:Stop()
+		end
+	
+		function stop(ID, Key)
+			local cor = coroutine.wrap(function()
+				wait(OldChar.LowerTorso.BOOMBOXSOUND.TimeLength-0)
+				if OldChar.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OriginalKeyUpValue == Key then
+					StopAudio()
+				end
+			end)
+			cor()
+		end
+	
+	
+		function play(ID, STOP, LMAO)
+			if LocalPlayer.Backpack:FindFirstChild("[Boombox]") then
+				local Tool = nil
+				if OldChar:FindFirstChildOfClass("Tool") and LMAO == true then
+					Tool = OldChar:FindFirstChildOfClass("Tool")
+					OldChar:FindFirstChildOfClass("Tool").Parent = LocalPlayer.Backpack
+				end
+				LocalPlayer.Backpack["[Boombox]"].Parent =
+					OldChar
+				game.ReplicatedStorage.MainEvent:FireServer("Boombox", ID)
+				OldChar["[Boombox]"].RequiresHandle = false
+				if OldChar["[Boombox]"]:FindFirstChild("Handle") then
+					OldChar["[Boombox]"].Handle:Destroy()
+				end
+				OldChar["[Boombox]"].Parent =
+					LocalPlayer.Backpack
+				LocalPlayer.PlayerGui.MainScreenGui.BoomboxFrame.Visible = false
+				if Tool ~= true then
+					if Tool then
+						Tool.Parent = OldChar
+					end
+				end
+				if STOP == true then
+					OldChar.LowerTorso:WaitForChild("BOOMBOXSOUND")
+					local cor = coroutine.wrap(function()
+						repeat wait() until OldChar.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OldChar.LowerTorso.BOOMBOXSOUND.TimeLength > 0
+						OriginalKeyUpValue = OriginalKeyUpValue+1
+						stop(ID, OriginalKeyUpValue)
+					end)
+					cor()
+				end
+			end
+		end
+	
+		local bro = false
+		local TimeErase, CanCel = "Time erase!", "Time erase!"
+		local TimeStop, TimeResume = "Time stop!", "Time stop!"
+		local XD = false
+		LocalPlayer.Chatted:Connect(function(MSG)
+			if MSG == "Rage!" then
+				if Humanoid:FindFirstChild("HeadScale") then
+					rm()
+					wait(0.6)
+	
+					Humanoid:FindFirstChild("HeadScale"):Destroy()
+					wait(0.6)
+				end
+	
+	
+				if Humanoid:FindFirstChild("BodyWidthScale") then
+					rm()
+					wait(0.6)
+					Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+					wait(0.6)
+				end
+	
+	
+	
+				if Humanoid:FindFirstChild("BodyDepthScale") then
+					rm()
+					wait(0.6)
+					Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+					wait(0.6)
+				end
+	
+	
+	
+				if Humanoid:FindFirstChild("BodyTypeScale") then
+					rm()
+					wait(0.6)
+					Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
+					wait(0.6)
+				end
+			elseif MSG:sub(1, 11) == TimeErase and XD == false and not Poter.IsPlaying then
+				XDDDD(XD)
+			elseif MSG == CanCel and XD == true and not Poter.IsPlaying then
+				XDDDD(XD)
+			elseif MSG == TimeStop then
+				play(6947054675, true, true)
+				wait(0.3)
+				OldChar.LowerTorso.BOOMBOXSOUND.SoundId = "http://www.roblox.com/asset/?id=wd"
+				wait(0.1)
+				play(7084712646, true, true)
+			end
+		end)
+	
+		function XDDDD(XDR)
+			if XDR == false then
+				XD = true
+				play(6546133414, true, true)
+				wait(2)
+				TimeEraseUI()
+				FoV()
+				Lighting()
+				ModelCharacter()
+			else
+				XD = false
+				InTimeErase = false
+				wait(0.1)
+				play(6543435253, true, true)
+				TimeEraseUI()
+				ModelCharacter()
+				Lighting()
+				FoV()
+			end
+		end
+	
+		function Jump(...)
+			(...).Jumping:Connect(function()
+				if SuperJumpEnabled == true then
+					if CD == false and not Poter.IsPlaying then
+						CD = true
+						delay(1, function()
+							CD = false
+						end)
+						Cookies:Play(0, 1, 1.4)
+						AddVelocity(OldChar.HumanoidRootPart.CFrame.UpVector*120, OldChar)
+						delay(0, function()
+							IsJump = true
+							wait(1) 
+							if IsJump == true then
+								IsJump = false
+							end
+						end)
+					end
+				end
+			end)
+		end
+	
+	
+		Jump(OldChar.Humanoid)
+	
+		LocalPlayer.CharacterAdded:Connect(function(Character)
+			wait(1)
+			if Character.Name == LocalPlayer.Name then
+				Jump(Character.Humanoid)
+				Poter = Character:WaitForChild("Humanoid"):LoadAnimation(Pointing)
+				Poter.Looped = true
+				Poter.Priority = Enum.AnimationPriority.Action
+	
+				Cookies = Character:WaitForChild("Humanoid"):LoadAnimation(game.ReplicatedStorage.ClientAnimations.Roll)
+				OldChar = Character
+			end
+		end)
+	
+		game["Run Service"].Heartbeat:Connect(function()
+			if InTimeErase then
+				for i, v in pairs(OldChar:GetChildren()) do
+					if v:IsA("BasePart") then
+						v.CFrame = CFrame.new(math.random(200, 500), math.random(200, 500), math.random(200, 500))
+						v.Velocity = Vector3.new(0,0,0)
+					end
+				end
+	
+				if OldChar:FindFirstChild("Combat") and XD == true then
+					XD = false
+					XDDDD(true)
+				end
+	
+				if WalkSpeed == true then
+					MoveDirection = Vector3.new(LeftSpeed, UpSpeed, WSpped)
+					workspace:FindFirstChild(LocalPlayer.Name.."StringKOD"):FindFirstChild("Idaro").Humanoid:Move(MoveDirection, true)
+				end
+			else
+				if OldChar:FindFirstChild("[Flashlight]") then
+					if workspace.Players:FindFirstChild(MyStand) then
+						if not Poter.IsPlaying then
+							Poter:Play()
+							Poter:AdjustSpeed(0)
+							Poter.TimePosition = 1.2
+						end
+						local lol = workspace.Players:FindFirstChild(MyStand).HumanoidRootPart.CFrame * CFrame.new(0, 0.5, 1.25)
+						OldChar.HumanoidRootPart.CFrame = lol
+					end
+				else
+					if Poter.IsPlaying then
+						Poter:Stop()
+					end
+				end
+			end
+		end)	
+	
+		local Animate = game.Players.LocalPlayer.Character.Animate
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid').Name = 'Naruto UTG'
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid').WalkSpeed = 40
+	end)
+end
+coroutine.wrap(QITWCBJ_fake_script)()
+local function ZOYMHMY_fake_script() -- Button_8.LocalScript 
+	local script = Instance.new('LocalScript', Button_8)
+
+	script.Parent.Activated:Connect(function()
+		-- Gui to Lua
+		-- Version: 3.2
+	
+		-- Instances:
+		game.Players.LocalPlayer.Character.UpperTorso:BreakJoints()
+		local MainScreen = Instance.new("ScreenGui")
+		local label = Instance.new("TextLabel")
+	
+		--Properties:
+	
+		MainScreen.Name = "MainScreen"
+		MainScreen.Parent = game.CoreGui
+		MainScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		label.Name = "label"
+		label.Parent = MainScreen
+		label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		label.BackgroundTransparency = 1.000
+		label.BorderSizePixel = 0
+		label.Position = UDim2.new(0.420998991, 0, 0.180467084, 0)
+		label.Rotation = 2.000
+		label.Size = UDim2.new(0, 246, 0, 165)
+		label.Font = Enum.Font.SourceSans
+		label.Text = "Your Bad"
+		label.TextColor3 = Color3.fromRGB(182, 0, 3)
+		label.TextSize = 200.000
+	
+		-- Scripts:
+	
+		local function PBIW_fake_script() -- label.LocalScript 
+			local script = Instance.new('LocalScript', label)
+	
+			local b = true
+			local a = 0
+			local X,Y = {0.5,0}, {0.9,0}
+			local txt = {"Your a killer", "Your a Psycho", "Psycho!", "Your UnWorthy", "Your Bad", "KILL THEM", "End the WORLD!"}
+			script.Parent.Position = UDim2.new(X[math.random(#X)],0,Y[math.random(#Y)],0)
+			script.Parent.Text = txt[math.random(1, #txt)]
+			local player = game.Players.LocalPlayer
+			local notifSound = Instance.new("Sound",workspace)
+			notifSound.PlaybackSpeed = 1
+			notifSound.Volume = 60
+			notifSound.SoundId = "rbxassetid://1837470777"
+			notifSound.PlayOnRemove = true
+			notifSound.Looped = true
+			notifSound:Destroy()
+			while b == true do
+				if a ~= 5 then
+					script.Parent.Rotation = script.Parent.Rotation + 10
+					wait(0.2)
+					script.Parent.Rotation = script.Parent.Rotation - 20
+					wait(0.2)
+					script.Parent.Rotation = script.Parent.Rotation + 10
+					wait(0.2)
+					a = a + 1
+				elseif a == 5 then
+					script.Parent.Visible = false
+					wait(0.2)
+					script.Parent.Position = UDim2.new(X[math.random(#X)],0,Y[math.random(#Y)],0)
+					script.Parent.Text = txt[math.random(1, #txt)]
+					script.Parent.Visible = true
+					a = 0
+				end
+			end
+		end
+		coroutine.wrap(PBIW_fake_script)()
+	end)
+end
+coroutine.wrap(ZOYMHMY_fake_script)()
+local function ZCDGGB_fake_script() -- Button_9.LocalScript 
+	local script = Instance.new('LocalScript', Button_9)
+
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/cjdjmj/fejesusscript/main/README.md", true))()
+	end)
+end
+coroutine.wrap(ZCDGGB_fake_script)()
+local function KKER_fake_script() -- Button_10.LocalScript 
+	local script = Instance.new('LocalScript', Button_10)
+
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+	end)
+end
+coroutine.wrap(KKER_fake_script)()
+local function PUUBHQ_fake_script() -- Button_11.LocalScript 
+	local script = Instance.new('LocalScript', Button_11)
+
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/WalkOnWalls/main/YesEpic", true))()
+	end)
+end
+coroutine.wrap(PUUBHQ_fake_script)()
+local function BHGMOM_fake_script() -- Button_12.LocalScript 
+	local script = Instance.new('LocalScript', Button_12)
+
+	script.Parent.Activated:Connect(function()
+		-- Gui to Lua
+		-- Version: 3.2
+	
+		-- Instances:
+	
+		local Gun_Mods_Core = Instance.new("ScreenGui")
+		local MainFrame = Instance.new("Frame")
+		local label = Instance.new("TextLabel")
+		local UICorner = Instance.new("UICorner")
+		local Silenced = Instance.new("TextButton")
+		local UICorner_2 = Instance.new("UICorner")
+		local info = Instance.new("TextLabel")
+		local scope = Instance.new("TextButton")
+		local UICorner_3 = Instance.new("UICorner")
+		local info_2 = Instance.new("TextLabel")
+		local NV_scope = Instance.new("TextButton")
+		local UICorner_4 = Instance.new("UICorner")
+		local info_3 = Instance.new("TextLabel")
+		local AimLock = Instance.new("TextButton")
+		local UICorner_5 = Instance.new("UICorner")
+		local info_4 = Instance.new("TextLabel")
+		local Lbullets = Instance.new("TextButton")
+		local UICorner_6 = Instance.new("UICorner")
+		local info_5 = Instance.new("TextLabel")
+	
+		--Properties:
+	
+		Gun_Mods_Core.Name = "Gun_Mods_Core"
+		Gun_Mods_Core.Parent = game.CoreGui
+		Gun_Mods_Core.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+		MainFrame.Name = "MainFrame"
+		MainFrame.Parent = Gun_Mods_Core
+		MainFrame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+		MainFrame.BackgroundTransparency = 0.550
+		MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		MainFrame.BorderSizePixel = 3
+		MainFrame.Position = UDim2.new(0.0227920227, 0, 0.0202247184, 0)
+		MainFrame.Size = UDim2.new(0, 590, 0, 309)
+	
+		label.Name = "label"
+		label.Parent = MainFrame
+		label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		label.Position = UDim2.new(0.330508471, 0, 0.0291262139, 0)
+		label.Size = UDim2.new(0, 200, 0, 50)
+		label.Font = Enum.Font.SourceSans
+		label.Text = "Gun Mods"
+		label.TextColor3 = Color3.fromRGB(255, 255, 255)
+		label.TextSize = 38.000
+	
+		UICorner.Parent = label
+	
+		Silenced.Name = "Silenced"
+		Silenced.Parent = MainFrame
+		Silenced.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+		Silenced.Position = UDim2.new(0.0762711912, 0, 0.233009711, 0)
+		Silenced.Size = UDim2.new(0, 162, 0, 50)
+		Silenced.Font = Enum.Font.SourceSans
+		Silenced.Text = "Silencer"
+		Silenced.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Silenced.TextSize = 30.000
+	
+		UICorner_2.CornerRadius = UDim.new(0, 5)
+		UICorner_2.Parent = Silenced
+	
+		info.Name = "info"
+		info.Parent = Silenced
+		info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		info.BackgroundTransparency = 1.000
+		info.Position = UDim2.new(0.148148149, 0, 0.660000026, 0)
+		info.Size = UDim2.new(0, 113, 0, 17)
+		info.Font = Enum.Font.SourceSans
+		info.Text = "(Shotgun/SMG)"
+		info.TextColor3 = Color3.fromRGB(0, 0, 0)
+		info.TextSize = 14.000
+	
+		scope.Name = "scope"
+		scope.Parent = MainFrame
+		scope.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+		scope.Position = UDim2.new(0.6474576, 0, 0.233009711, 0)
+		scope.Size = UDim2.new(0, 162, 0, 50)
+		scope.Font = Enum.Font.SourceSans
+		scope.Text = "Tactical Scope"
+		scope.TextColor3 = Color3.fromRGB(0, 0, 0)
+		scope.TextSize = 30.000
+	
+		UICorner_3.CornerRadius = UDim.new(0, 5)
+		UICorner_3.Parent = scope
+	
+		info_2.Name = "info"
+		info_2.Parent = scope
+		info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		info_2.BackgroundTransparency = 1.000
+		info_2.Position = UDim2.new(0.148148149, 0, 0.660000026, 0)
+		info_2.Size = UDim2.new(0, 113, 0, 17)
+		info_2.Font = Enum.Font.SourceSans
+		info_2.Text = "Q - Zoom in"
+		info_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		info_2.TextSize = 14.000
+	
+		NV_scope.Name = "NV_scope"
+		NV_scope.Parent = MainFrame
+		NV_scope.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+		NV_scope.Position = UDim2.new(0.6474576, 0, 0.41747573, 0)
+		NV_scope.Size = UDim2.new(0, 162, 0, 50)
+		NV_scope.Font = Enum.Font.SourceSans
+		NV_scope.Text = "Night Vision"
+		NV_scope.TextColor3 = Color3.fromRGB(0, 0, 0)
+		NV_scope.TextSize = 30.000
+	
+		UICorner_4.CornerRadius = UDim.new(0, 5)
+		UICorner_4.Parent = NV_scope
+	
+		info_3.Name = "info"
+		info_3.Parent = NV_scope
+		info_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		info_3.BackgroundTransparency = 1.000
+		info_3.Position = UDim2.new(0.148148149, 0, 0.660000026, 0)
+		info_3.Size = UDim2.new(0, 113, 0, 17)
+		info_3.Font = Enum.Font.SourceSans
+		info_3.Text = "Q - Zoom in"
+		info_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+		info_3.TextSize = 14.000
+	
+		AimLock.Name = "Aim-Lock"
+		AimLock.Parent = MainFrame
+		AimLock.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+		AimLock.Position = UDim2.new(0.362711847, 0, 0.41747573, 0)
+		AimLock.Size = UDim2.new(0, 162, 0, 50)
+		AimLock.Font = Enum.Font.SourceSans
+		AimLock.Text = "Aim Lock"
+		AimLock.TextColor3 = Color3.fromRGB(0, 0, 0)
+		AimLock.TextSize = 30.000
+	
+		UICorner_5.CornerRadius = UDim.new(0, 5)
+		UICorner_5.Parent = AimLock
+	
+		info_4.Name = "info"
+		info_4.Parent = AimLock
+		info_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		info_4.BackgroundTransparency = 1.000
+		info_4.Position = UDim2.new(0.148148149, 0, 0.660000026, 0)
+		info_4.Size = UDim2.new(0, 113, 0, 17)
+		info_4.Font = Enum.Font.SourceSans
+		info_4.Text = "Q - lock"
+		info_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+		info_4.TextSize = 14.000
+	
+		Lbullets.Name = "L-bullets"
+		Lbullets.Parent = MainFrame
+		Lbullets.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+		Lbullets.Position = UDim2.new(0.362711847, 0, 0.233009711, 0)
+		Lbullets.Size = UDim2.new(0, 162, 0, 50)
+		Lbullets.Font = Enum.Font.SourceSans
+		Lbullets.Text = "Lasting Bullets"
+		Lbullets.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Lbullets.TextSize = 30.000
+	
+		UICorner_6.CornerRadius = UDim.new(0, 5)
+		UICorner_6.Parent = Lbullets
+	
+		info_5.Name = "info"
+		info_5.Parent = Lbullets
+		info_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		info_5.BackgroundTransparency = 1.000
+		info_5.Position = UDim2.new(0.148148149, 0, 0.660000026, 0)
+		info_5.Size = UDim2.new(0, 113, 0, 17)
+		info_5.Font = Enum.Font.SourceSans
+		info_5.Text = "(Need to be holding a gun)"
+		info_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+		info_5.TextSize = 14.000
+	
+		-- Scripts:
+	
+		local function ZNCLLW_fake_script() -- MainFrame.dragg 
+			local script = Instance.new('LocalScript', MainFrame)
+	
+			script.Parent.Draggable = true
+			script.Parent.Selectable = true
+			script.Parent.Active = true
+		end
+		coroutine.wrap(ZNCLLW_fake_script)()
+		local function EFFDM_fake_script() -- Silenced.LocalScript 
+			local script = Instance.new('LocalScript', Silenced)
+	
+			local plr = game:GetService('Players').LocalPlayer
+	
+			script.Parent.Activated:Connect(function()
+				local Shotgun = plr.Character:FindFirstChild('[Shotgun]')
+				Shotgun.Handle.ShootSound.Volume = 0
+				Shotgun.Handle.ShootSound.Volume = 0
+				local Shotgun = plr.Character:FindFirstChild('[Shotgun]')
+				Shotgun.Handle.NoAmmo.Volume = 0
+				Shotgun.Handle.NoAmmo.Volume = 0
+				local Silencer = plr.Character:FindFirstChild('[Silencer]')
+				Silencer.Handle.ShootSound.Volume = 0
+				Silencer.Handle.ShootSound.Volume = 0
+				local Silencer = plr.Character:FindFirstChild('[Silencer]')
+				Silencer.Handle.NoAmmo.Volume = 0
+				Silencer.Handle.NoAmmo.Volume = 0
+				local SMG = plr.Character:FindFirstChild('[SMG]')
+				SMG.Handle.ShootSound.Volume = 0
+				SMG.Handle.ShootSound.Volume = 0
+			end)
+		end
+		coroutine.wrap(EFFDM_fake_script)()
+		local function WOAT_fake_script() -- scope.LocalScript 
+			local script = Instance.new('LocalScript', scope)
+	
+			local plr = game:GetService('Players').LocalPlayer
+	
+			script.Parent.Activated:Connect(function()
+				Players = game:GetService('Players')
+				UIS = game:GetService('UserInputService')
+				RS = game:GetService('RunService')
+				player = Players.LocalPlayer
+	
+				UIS.InputBegan:Connect(function(key) 
+					if key.KeyCode == Enum.KeyCode.Q then
+						if script.Parent.Visible == true then
+							script.Parent.Visible = false
+							player.CameraMode = Enum.CameraMode.Classic
+							workspace.CurrentCamera.FieldOfView = 70
+						elseif script.Parent.Visible == false then
+							script.Parent.Visible = true
+							player.CameraMode = Enum.CameraMode.LockFirstPerson
+							workspace.CurrentCamera.FieldOfView = 25
+						end
+					end
+				end)
+			end)
+		end
+		coroutine.wrap(WOAT_fake_script)()
+		local function PWGLQV_fake_script() -- NV_scope.LocalScript 
+			local script = Instance.new('LocalScript', NV_scope)
+	
+			local plr = game:GetService('Players').LocalPlayer
+	
+			script.Parent.Activated:Connect(function()
+				-- Gui to Lua
+				-- Version: 3.2
+	
+				-- Instances:
+	
+				local scope = Instance.new("ScreenGui")
+				local ImageLabel = Instance.new("ImageLabel")
+	
+				--Properties:
+	
+				scope.Name = "scope"
+				scope.Parent = game.CoreGui
+				scope.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+				ImageLabel.Parent = scope
+				ImageLabel.BackgroundColor3 = Color3.fromRGB(35, 255, 24)
+				ImageLabel.BackgroundTransparency = 0.800
+				ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				ImageLabel.Position = UDim2.new(0, 0, -0.0966292173, 0)
+				ImageLabel.Size = UDim2.new(0, 702, 0, 488)
+				ImageLabel.Image = "rbxassetid://10559974383"
+	
+				-- Scripts:
+	
+				local function SKDAJS_fake_script() -- ImageLabel.LocalScript 
+					local script = Instance.new('LocalScript', ImageLabel)
+	
+					Players = game:GetService('Players')
+					UIS = game:GetService('UserInputService')
+					RS = game:GetService('RunService')
+					player = Players.LocalPlayer
+	
+					UIS.InputBegan:Connect(function(key) 
+						if key.KeyCode == Enum.KeyCode.Q then
+							if script.Parent.Visible == true then
+								script.Parent.Visible = false
+								player.CameraMode = Enum.CameraMode.Classic
+								workspace.CurrentCamera.FieldOfView = 70
+							elseif script.Parent.Visible == false then
+								script.Parent.Visible = true
+								player.CameraMode = Enum.CameraMode.LockFirstPerson
+								workspace.CurrentCamera.FieldOfView = 25
+							end
+						end
+					end)
+				end
+				coroutine.wrap(SKDAJS_fake_script)()
+			end)
+		end
+		coroutine.wrap(PWGLQV_fake_script)()
+		local function ZNCT_fake_script() -- AimLock.LocalScript 
+			local script = Instance.new('LocalScript', AimLock)
+	
+			local plr = game:GetService('Players').LocalPlayer
+	
+			script.Parent.Activated:Connect(function()
+				_G.KEY = "q"
+				_G.PART = "LowerTorso"
+				_G.PRED = 0.037
+				_G.Frame = Vector3.new(0,0.53,0)
+				_G.AIR = -0.5
+				_G.SHIT = 0.1
+	
+	
+				local CC = game:GetService "Workspace".CurrentCamera
+				local Plr
+				local enabled = false
+				local accomidationfactor = nil
+				local mouse = game.Players.LocalPlayer:GetMouse()
+				local placemarker = Instance.new("Part", game.Workspace)
+				local guimain = Instance.new("Folder", game.CoreGui)
+	
+				getgenv().makemarker = function(Parent, Adornee, Color, Size, Size2)
+					local e = Instance.new("BillboardGui", Parent)
+					e.Name = "PP"
+					e.Adornee = Adornee
+					e.Size = UDim2.new(Size, Size2, Size, Size2)
+					e.AlwaysOnTop = true
+					local a = Instance.new("Frame", e)
+					a.Size = UDim2.new(4, 0, 4, 0)
+					a.BackgroundTransparency = 0.1
+					a.BackgroundColor3 = Color
+					local g = Instance.new("UICorner", a)
+					g.CornerRadius = UDim.new(50, 50)
+					return (e)
+				end
+	
+				local data = game.Players:GetPlayers()
+				function noob(player)
+					local character
+					repeat
+						wait()
+					until player.Character
+					local handler = makemarker(guimain, player.Character:WaitForChild(_G.PART), Color3.fromRGB(255, 255, 255), 0.0, 0)
+					handler.Name = player.Name
+					player.CharacterAdded:connect(
+						function(Char)
+							handler.Adornee = Char:WaitForChild(_G.PART)
+						end
+					)
+	
+					local TextLabel = Instance.new("TextLabel", handler)
+					TextLabel.BackgroundTransparency = 1
+					TextLabel.Position = UDim2.new(0, 0, 0, -50)
+					TextLabel.Size = UDim2.new(0, 100, 0, 100)
+					TextLabel.Font = Enum.Font.SourceSansSemibold
+					TextLabel.TextSize = 14
+					TextLabel.TextColor3 = Color3.new(1, 1, 1)
+					TextLabel.TextStrokeTransparency = 0
+					TextLabel.TextYAlignment = Enum.TextYAlignment.Bottom
+					TextLabel.Text = "Name: " .. player.Name
+					TextLabel.ZIndex = 10
+	
+					spawn(
+						function()
+							while wait() do
+								if player.Character then
+									--TextLabel.Text = player.Name.." | Bounty: "..tostring(player:WaitForChild("leaderstats").Wanted.Value).." | "..tostring(math.floor(player.Character:WaitForChild("Humanoid").Health))
+								end
+							end
+						end
+					)
+				end
+	
+				for i = 1, #data do
+					if data[i] ~= game.Players.LocalPlayer then
+						noob(data[i])
+					end
+				end
+	
+				game.Players.PlayerAdded:connect(
+					function(Player)
+						noob(Player)
+					end
+				)
+	
+				game.Players.PlayerRemoving:Connect(
+					function(player)
+						guimain[player.Name]:Destroy()
+					end
+				)
+	
+				spawn(
+					function()
+						placemarker.Anchored = true
+						placemarker.CanCollide = false
+						placemarker.Size = Vector3.new(0.1, 0.1, 0.1)
+						placemarker.Transparency = _G.SHIT
+						makemarker(placemarker, placemarker, Color3.fromRGB(255, 255, 255), 0.20, 0)
+					end
+				)
+	
+				mouse.KeyDown:Connect(
+					function(k)
+						if k ~= _G.KEY then
+							return
+						end
+						if enabled then
+							-- guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							enabled = false
+							TextLabel.TextColor3 = Color3.fromRGB(255, 20, 75)
+							TextLabel.Text = "------"
+						else
+							--guimain[Plr.Name].Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+							enabled = true
+							Plr = getClosestPlayerToCursor()
+							TextLabel.TextColor3 = Color3.fromRGB(12, 255, 0)
+							TextLabel.Text = Plr.Character.Humanoid.DisplayName
+						end
+					end)
+	
+				function getClosestPlayerToCursor()
+					local closestPlayer
+					local shortestDistance = math.huge
+	
+					for i, v in pairs(game.Players:GetPlayers()) do
+						if
+							v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and
+							v.Character.Humanoid.Health ~= 0 and
+							v.Character:FindFirstChild(_G.PART)
+						then
+							local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+							local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+							if magnitude < shortestDistance then
+								closestPlayer = v
+								shortestDistance = magnitude
+							end
+						end
+					end
+					return closestPlayer
+				end
+	
+				game:GetService "RunService".Stepped:connect(
+					function()
+						if enabled and Plr.Character and Plr.Character:FindFirstChild(_G.PART) then
+							placemarker.CFrame =
+								CFrame.new(Plr.Character[_G.PART].Position + _G.Frame + (Plr.Character[_G.PART].Velocity * accomidationfactor))
+						else
+							placemarker.CFrame = CFrame.new(0, 9999, 0)
+						end
+					end
+				)
+	
+				local mt = getrawmetatable(game)
+				local old = mt.__namecall
+				setreadonly(mt, false)
+				mt.__namecall =
+					newcclosure(
+						function(...)
+							local args = {...}
+							if enabled and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+							args[3] = Plr.Character[_G.PART].Position+ _G.Frame + (Plr.Character[_G.PART].Velocity * accomidationfactor)
+							return old(unpack(args))
+						end
+							return old(...)
+						end
+					)
+	
+				game.Players.LocalPlayer.Chatted:Connect(
+					function(Chat)
+						if Chat == "print" then
+							print(accomidationfactor)
+						end
+					end
+				)
+	
+				game.Players.LocalPlayer.Chatted:Connect(
+					function(Chat)
+						if Chat == "Code:1029" then
+	
+							_G.KEY = nil
+							_G.AIR = nil
+							_G.PART = nil
+							_G.PRED = nil
+							TextLabel.Visible = false
+	
+	
+						end
+					end
+				)
+	
+				game.Players.LocalPlayer.Chatted:Connect(
+					function(Chat)
+						if Chat == "Code:1030" then
+	
+							_G.KEY = "q"
+							_G.PART = "UpperTorso"
+							_G.PRED = 0.037
+							_G.Frame = Vector3.new(0,0.0,0)
+							_G.AIR = -0.5
+							_G.SHIT = 1
+	
+	
+						end
+					end
+				)
+	
+	
+	
+				game.Players.LocalPlayer.Chatted:Connect(
+					function(Chat)
+						if Chat == "P+" then
+	
+	
+							_G.PRED = _G.PRED+0.001
+	
+	
+	
+						end
+					end
+				)
+	
+				game.Players.LocalPlayer.Chatted:Connect(
+					function(Chat)
+						if Chat == "P-" then
+	
+							_G.PRED = _G.PRED-0.001
+	
+	
+	
+						end
+					end
+				)
+	
+	
+				while wait() do
+					local ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+					local Value = tostring(ping)
+					local pingValue = Value:split(" ")
+					local PingNumber = pingValue[1]
+	
+					accomidationfactor = PingNumber / 1000 + _G.PRED
+					if getClosestPlayerToCursor().Character.Humanoid.Jump == true and AimlockTarget.Character.Humanoid.FloorMaterial == Enum.Material.Air then
+						_G.PART = "RightFood"
+						accomidationfactor = _G.AIR
+					else
+						getClosestPlayerToCursor().Character:WaitForChild("Humanoid").StateChanged:Connect(function(old,new)
+							if new == Enum.HumanoidStateType.Freefall then
+								_G.PART = "RightFood"
+								accomidationfactor = _G.AIR
+							else
+								_G.PART = "UpperTorso"
+								accomidationfactor = PingNumber / 1000 + _G.PRED
+							end
+						end)
+					end
+				end
+	
+				while wait() do
+					local ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+					local Value = tostring(ping)
+					local pingValue = Value:split(" ")
+					local PingNumber = pingValue[1]
+	
+					accomidationfactor = PingNumber / 1000 + _G.PRED
+				end
+			end)
+		end
+		coroutine.wrap(ZNCT_fake_script)()
+		local function OIFBEYY_fake_script() -- Lbullets.LocalScript 
+			local script = Instance.new('LocalScript', Lbullets)
+	
+			local player = game:GetService('Players').LocalPlayer
+	
+			function announce(title,text,time)
+				game.StarterGui:SetCore("SendNotification", {
+					Title = title;
+					Text = text;
+					Duration = time;
+				})
+			end
+	
+			script.Parent.Activated:Connect(function()
+				if player.Character:FindFirstChildWhichIsA('Tool') then
+					if player.Character:FindFirstChildWhichIsA('Tool'):FindFirstChild('Handle'):FindFirstChildWhichIsA('BillboardGui') then
+						player.Character:FindFirstChildWhichIsA('Tool'):FindFirstChild('Handle'):FindFirstChildWhichIsA('BillboardGui'):Destroy()
+					else
+						announce('LastingBullets Error', 'you have to be holding a gun', 5)
+					end
+				else
+					announce('LastingBullets Error', 'you have to be holding a gun', 5)
+				end
+			end)
+		end
+		coroutine.wrap(OIFBEYY_fake_script)()
+	
+	end)
+end
+coroutine.wrap(BHGMOM_fake_script)()
+local function JPTHOLZ_fake_script() -- Button_13.LocalScript 
+	local script = Instance.new('LocalScript', Button_13)
+
+	script.Parent.Activated:Connect(function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/misc-releases/Keystrokes.lua",true))()
+	end)
+end
+coroutine.wrap(JPTHOLZ_fake_script)()
+local function KUVKI_fake_script() -- Button_14.LocalScript 
+	local script = Instance.new('LocalScript', Button_14)
+
+	script.Parent.Activated:Connect(function()
+		sounds = {}
+	
+		function getSounds(loc)
+			if loc:IsA("Sound") then
+				table.insert(sounds,loc)
+			end
+			for _,obj in pairs(loc:GetChildren()) do
+				getSounds(obj)
+			end
+		end
+	
+		getSounds(game)
+	
+		game.DescendantAdded:connect(function(obj)
+			if obj:IsA("Sound") then
+				table.insert(sounds,obj)
+			end
+		end)
+	
+		while wait(0.2) do
+			for _,sound in pairs(sounds) do
+				pcall(function()
+					sound:Play()
+				end)
+			end
+		end
+	end)
+end
+coroutine.wrap(KUVKI_fake_script)()
+local function WXJRIYT_fake_script() -- Shadow.LocalScript 
+	local script = Instance.new('LocalScript', Shadow)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	
+	Mouse.KeyDown:Connect(function(Key)
+		if Key == "v" then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+			elseif script.Parent.Visible == false then
+				script.Parent.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(WXJRIYT_fake_script)()
+local function IBQSYSW_fake_script() -- Main_Stuff.LocalScript 
+	local script = Instance.new('LocalScript', Main_Stuff)
+
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "Made By: topcoldgaming#0001";
+		Text = "";
+		Time = 60;
+		Icon = "";
+		Button1 = "Good Job!";
+	})
+end
+coroutine.wrap(IBQSYSW_fake_script)()
+local function DFDXSS_fake_script() -- Scripts.Da_Hood_Anti_Cheat 
+	local script = Instance.new('LocalScript', Scripts)
+
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end
+	
+	
+	--// Da Hood game Id checker //--
+	if game.PlaceId ~= (2788229376) then
+		return
+	end
+	
+	spawn(function()
+		Admins = {"JokeTheFool","ITopStarI" ,"Sherosama", "Papa_Mbaye",
+			"AStrongMuscle", "iRenn", "NikoSenpai", "UziGarage", "iumu",
+			"Benoxa", "Luutyy", "clubstar54", "givkitheth", "zakblak20",
+			"MarTheWise", "BeeTheKidd", "qtCeleste", "coreten", "LegacyCross",
+			"NatsuDBlaze", "Asuyia", "POMPKUN", "Untold_Joke", "MoodJesus", "AfroDs",
+			"MarkoSumisu", "Greed_Ocean","givkitheth", "DrxcoBaby" , "DrxcoRxsh", "XavierWildYT",
+			"dtbbullet", "ATKDrizzy", "bull_bot"
+		}
+		for i, players in pairs(game:GetService("Players"):GetPlayers()) do
+			if players.Name == unpack(Admins) then
+				game:GetService("Players").LocalPlayer:Kick("$-T0P-$ Defense : Admin Joined, Kicked To Prevent Ban")
+			end
+		end
+		game:GetService("Players").PlayerAdded:Connect(function(Player)
+			if Player.Name == unpack(Admins) then
+				game:GetService("Players").LocalPlayer:Kick("$-T0P-$ Defense : Admin Joined, Kicked To Prevent Ban")
+			end
+		end)
+	end)
+	-- // Vars
+	local detectionVectors = {
+		CHECKER_1 = true,
+		TeleportDetect = true,
+		OneMoreTime = true,
+		BANREMOTE = true,
+		KICKREMOTE = true
+	}
+	-- // Metatable vars
+	local mt = getrawmetatable(game)
+	local backupnamecall = mt.__namecall
+	setreadonly(mt, false)
+	-- // Hook
+	mt.__namecall = newcclosure(function(...)
+		-- // Vars
+		local method = getnamecallmethod()
+		local args = {...}
+		-- // Check if it trying to do naughty
+		if (method == "FireServer" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+			return wait(9e9)
+		end
+		if (method == "CHECKER_1" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+			return wait(9e9)
+		end
+		if (method == "KICKREMOTE" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+	
+			return wait(9e9)
+		end
+		if (method == "BANREMOTE" and tostring(args[1]) == "MainEvent" and detectionVectors[args[2]]) then
+			return wait(9e9)
+		end
+		-- // Fly Bypass
+		if (not checkcaller() and getfenv(1).crash ~= nil and getfenv(1).checkChild ~= nil) then
+			getcallingscript():Destroy()
+			return wait(9e9)
+		end
+		-- // Return
+		return backupnamecall(...)
+	end)
+	-- // End Metatable
+	setreadonly(mt, true)
+	function toTarget(d, C, D)
+		local E = game:service"TweenService"
+		local F = TweenInfo.new((C - d).Magnitude / 170, Enum.EasingStyle.Quad)
+		local G = tick()
+		local H, I = pcall(function()
+			local H = E:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], F, {
+				CFrame = D
+			})
+			H:Play()
+		end)
+		if not H then
+			return I
+		end
+	end;
+	function ToShoes(d, C, D)
+		local E = game:service"TweenService"
+		local F = TweenInfo.new((C - d).Magnitude / 50, Enum.EasingStyle.Quad)
+		local G = tick()
+		local H, I = pcall(function()
+			local H = E:Create(game.Players.LocalPlayer.Character["HumanoidRootPart"], F, {
+				CFrame = D
+			})
+			H:Play()
+		end)
+		if not H then
+			return I
+		end
+	end;
+	local function J(K, L)
+		local M = (K.Position - L.Position).magnitude;
+		if M <= 50 then
+	
+			fireclickdetector(L:FindFirstChild("ClickDetector"), 4)
+			return M
+		end
+	end;
+	function GetPlayer(String)
+		local Found = {}
+		local strl = String:lower()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name:lower():sub(1, #String) == String:lower() or v.DisplayName:lower():sub(1, #String) == String:lower() then
+				table.insert(Found,v.Name)
+			end
+		end
+		return Found
+	end
+	local function FindPlrOnMouse()
+		for i, v in pairs(game.Workspace:FindPartsInRegion3(Region3.new(game.Players.LocalPlayer:GetMouse().Hit.Position, game.Players.LocalPlayer:GetMouse().Hit.Position))) do
+			local plr = game.Players:GetPlayerFromCharacter(v.Parent)
+			if plr ~= nil and plr ~= game.Players.LocalPlayer then
+				return plr
+			end
+		end
+		return nil
+	end
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	--anti-cheat
+	repeat
+		wait()
+	until game:IsLoaded()
+	local gm = getrawmetatable(game)
+	setreadonly(gm, false)
+	local namecall = gm.__namecall
+	gm.__namecall =
+		newcclosure(
+			function(self, ...)
+				local args = {...}
+				if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
+				if tostring(getcallingscript()) ~= "Framework" then
+					return
+				end
+			end
+				if not checkcaller() and getnamecallmethod() == "Kick" then
+				return
+			end
+				return namecall(self, unpack(args))
+			end)
+	assert(getrawmetatable)
+	gmt = getrawmetatable(game)
+	setreadonly(gmt, false)
+	old = gmt.__namecall
+	gmt.__namecall =
+		newcclosure(
+			function(self, ...)
+				local args = {...}
+				if tostring(args[1]) == "BreathingHAMON" then
+				return
+			elseif tostring(args[1]) == "TeleportDetect" then
+				return
+			elseif tostring(args[1]) == "CHECKER_1" then
+				return
+			elseif tostring(args[1]) == "CHECKER" then
+				return
+			elseif tostring(args[1]) == "GUI_CHECK" then
+				return
+			elseif tostring(args[1]) == "OneMoreTime" then
+				return
+			elseif tostring(args[1]) == "checkingSPEED" then
+				return
+			elseif tostring(args[1]) == "BANREMOTE" then
+				return
+			elseif tostring(args[1]) == "PERMAIDBAN" then
+				return
+			elseif tostring(args[1]) == "KICKREMOTE" then
+				return
+			elseif tostring(args[1]) == "BR_KICKPC" then
+				return end
+	
+				return old(self, ...)
+			end)
+	--// Variables
+	
+	local Players = game:GetService("Players")
+	local OldNameCall = nil
+	
+	--// Global Variables
+	
+	getgenv().SendNotifications = false -- Set to true if you want to get notified regularly.
+	
+	--// Anti Kick Hook
+	
+	OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
+		local NameCallMethod = getnamecallmethod()
+	
+		if tostring(string.lower(NameCallMethod)) == "kick" then
+			if getgenv().SendNotifications == true then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "Exunys Developer",
+					Text = "You almost got kicked! Successfully prevented.",
+					Icon = "rbxassetid://6238540373",
+					Duration = 3,
+				})
+			end
+	
+			return nil
+		end
+	
+		return OldNameCall(Self, ...)
+	end)
+	
+	if getgenv().SendNotifications == true then
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Exunys Developer",
+			Text = "Anti-Kick script loaded",
+			Icon = "rbxassetid://6238537240",
+			Duration = 5,
+		})
+	end
+end
+coroutine.wrap(DFDXSS_fake_script)()
